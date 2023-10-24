@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+
+}
+.contenedor {
+  flex-flow: row nowrap;
+}
+
+h2 {
+  color: #245501;
+}
+
+h1 {
+color: #FFF;
+font-family: Poppins;
+font-size: 4.375rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.21875rem;
+}
+
+main {
+  margin-left: 2%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  display: none;
+}
+
+.contenedor {
+  display: flex;
+}
+
+.columna {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.imagen {
+  max-width: 100%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+button {
+border-radius: 4.0625rem;
+background: var(--COLOR-2, #1A4301);
+width: 31.25rem;
+height: 8.0625rem;
+flex-shrink: 0;
+
+}
+
+
+.datocurioso{
+  width: 90rem;
+  height: 45.25rem;
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.texto-negro{
+color: #000;
+font-family: Poppins;
+font-size: 1.375rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.06875rem;
+}
+
+.imagen {
+  background: url(../imagenes/foto\ home.png) no-repeat center bottom;
+  background-size: contain;
+  background-position: right;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  justify-content: center;
+}
+.fondo-ods {
+  background: url(../imagenes/ods12.jpeg) no-repeat center bottom;
+  background-size: contain;
+  background-position: right;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  margin-right: 5%;
+  justify-content: center;
+}
+a{
+color: #000;
+font-family: Poppins;
+font-size: 1.5625rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.07813rem;
+}
+footer {
+  display: flex;
+  width: 90rem;
+  height: 5.9375rem;
+  padding: 3.0625rem 2.125rem 1rem 63.5625rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+  border-top: 1px solid var(--Color-5, #ADB5BD);
+}
+
+.pfooter {
+color: #6C757D;
+font-family: Poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1;
+  padding-right: 1rem;
+  border-bottom: 1px solid #eff3f7;
+}
+
+header a {
+  text-decoration: none;
+  color: #1a4301;
+  font-size: 1rem;
+}
+
+.logo {
+  width: 50%;
+  padding-left: 3%;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.texto_construccion {
+  text-align: center;
+}
+
+.paleta-colores {
+  background-size: contain;
+  background-position: right;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  margin-right: 5%;
+  justify-content: center;
+}
+
+/*TAL CUAL EL FIGMA*/
+
+p {
+  width: 44.75rem;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.09375rem;
+}
+
+h2{
+  width: 44.1875rem;
+  height: 13.75rem;
+  flex-shrink: 0;
+  color: var(--COLOR-2, #1A4301);
+  font-family: Poppins;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.1875rem;
+}
+
+.titulountercio{
+
+}
+.mapaconceptual{
+  width: 41.25rem;
+height: 16.98063rem;
+flex-shrink: 0;
+}
+.untercio{
+width: 90rem;
+height: 44.875rem;
+flex-shrink: 0;
+background: url("../imagenes/untercio.png");
+}
+.mision{
+  color: #000;
+font-family: Poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.0625rem;
+}
+
+.valores{
+width: 36.8125rem;
+color: #000;
+font-family: Poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.0625rem;
+}
+
+.sobrenosotros{
+width: 36.8125rem;
+color: #000;
+font-family: Poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.0625rem;
+}
+.fondo-inicio {
+  background-image: url("../imagenes/fondoinicio.png");
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 701px) {
+  .contenedor {
+    flex-flow: row nowrap;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .integrante {
+    min-width: 100px;
+  }
+
+  .integrante {
+    min-width: 200px;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .navbar img {
+    display: none;
+  }
+
+  .navbar a {
+display: flex;
+height: 10.375rem;
+justify-content: center;
+align-items: center;
+gap: 3.4375rem;
+  }
+
+  .burger {
+    box-sizing: border-box;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-color: white;
+  }
+
+  input:checked ~ .navbar {
+    display: block;
+  }
+
+  footer {
+    margin-top: 16px;
+  }
+
+  .contenedor {
+    flex-flow: column nowrap;
+  }
+
+  .col-2 {
+    width: 100%;
+  }
+
+  main {
+    min-height: 85vh;
+  }
+}
