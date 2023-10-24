@@ -205,8 +205,23 @@ h2{
   line-height: normal;
   letter-spacing: 0.1875rem;
 }
-
-.titulountercio{
+.fondo-negocio{
+  background-image: url("../imagenes/fondonegocio.png");
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+.textoblanco{
+width: 29.75rem;
+height: 28.3125rem;
+flex-shrink: 0;
+color: #FFF;
+font-family: Poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.0625rem;
 
 }
 .mapaconceptual{
