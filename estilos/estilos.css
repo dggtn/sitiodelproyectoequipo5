@@ -145,6 +145,16 @@ a {
   width: 100%;
   height: 65rem;
 }
+p {
+width: 44.75rem;
+color: #FFF;
+font-family: Poppins;
+font-size: 1.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.09375rem;
+}
 
 footer {
   width: 100%;
@@ -225,16 +235,35 @@ header ul{
   max-height: 50%;
 }
 
-.texto_construccion{
-    text-align: center;
+.untercio{
+  background-image: url(../imagenes/untercio.jpg);
+  width: 100%;
+  height: 70rem;
 }
 
-h1 {
-  margin-left: 8rem; 
-  margin-right: 8rem; 
-  text-align: left;
-  margin-top: 5rem;
-  color: #245501;
+.texto-negro{
+color: #000;
+font-family: Poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.0625rem;
+width: 36.8125rem;
+
+}
+
+.titulos {
+color: #FFF;
+font-family: Poppins;
+font-size: 4.375rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.21875rem;
+width: 44.1875rem;
+height: 13.75rem;
+flex-shrink: 0;
 }
 
 h2 {
