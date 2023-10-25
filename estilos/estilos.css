@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+h1 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 4.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.21875rem;
+}
+
+
+
+button {
+  border-radius: 4.0625rem;
+  background: var(--COLOR-2, #1a4301);
+  width: 31.25rem;
+  height: 8.0625rem;
+  flex-shrink: 0;
+}
+
+.datocurioso {
+  width: 90rem;
+  height: 45.25rem;
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.texto-negro {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.06875rem;
+}
+
+a {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.07813rem;
+}
+footer {
+  width: 100%;
+  border-top: 1px solid var(--Color-5, #adb5bd);
+}
+
+.pfooter {
+  color: #6c757d;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1;
+  border-bottom: 1px solid #eff3f7;
+}
+
+header a {
+  text-decoration: none;
+  color: #1a4301;
+  font-size: 1rem;
+}
+
+.logo {
+  width: 50%;
+  padding-left: 3%;
+}
+
+header div {
+  gap: 2rem;
+}
+
+
+
+/*TAL CUAL EL FIGMA*/
+
+p {
+  width: 44.75rem;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.09375rem;
+}
+
+h2 {
+  width: 44.1875rem;
+  height: 13.75rem;
+  flex-shrink: 0;
+  color: var(--COLOR-2, #1a4301);
+  font-family: Poppins;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.1875rem;
+}
+
+.fondo-usuario {
+  background-image: url("../imagenes/fondousuario.png");
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+.fondo-negocio {
+  background-image: url("../imagenes/fondonegocio.png");
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+.textoblanco {
+  width: 29.75rem;
+  height: 28.3125rem;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+}
+.mapaconceptual {
+  width: 41.25rem;
+  height: 16.98063rem;
+  flex-shrink: 0;
+}
+.untercio {
+  width: 90rem;
+  height: 44.875rem;
+  flex-shrink: 0;
+  background: url("../imagenes/untercio.png");
+}
+.mision {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+}
+
+.valores {
+  width: 36.8125rem;
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+}
+.contenedorsobrenosotros{
+  margin-top: 4rem;
+}
+.sobrenosotros {
+  width: 36.8125rem;
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+}
+.fondo-inicio {
+  background-image: url("../imagenes/fondoinicio.png");
+  width: 90rem;
+  height: 44.875rem;
+  flex-shrink: 0;
+}
+
+
+
