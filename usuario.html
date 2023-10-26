@@ -1,99 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>INICIO</title>
-    <meta
-      name="description"
-      content="Delivery sustentable de alimentos para ayudar a combatir el desperdicio de comida"
-    />
-    <link rel="stylesheet" href="estilos/estilos.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/85f636b7ea.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-
-  <body>
-    <header class="header">
-      <a href="/index.html">
-        <img
-          class="logo"
-          src="imagenes/share_before_waste_logo.png"
-          alt="logo"
-        />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USUARIO</title>
+  <meta name="description" content="Delivery sostenible de alimentos para ayudar a combatir el desperdicio de comida">
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  >
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">
+        <img class="logo" src="imagenes/share_before_waste_logo.png" alt="logo" />
       </a>
-      <a href="index.html">INICIO</a>
-      <a href="iniciativas.html">INICIATIVAS</a>
-      <a href="negocio.html">NEGOCIO</a>
-      <a href="usuario.html">USUARIO</a>
-      <a href="tuopinion.html">TU OPINIÓN</a>
-    </header>
-
-    <header class="header-mobile">
-      <a class="logo-link" href="/index.html">
-        <img
-          class="logo"
-          src="imagenes/share_before_waste_logo.png"
-          alt="logo"
-        />
-      </a>
-      <input class="side-menu" type="checkbox" id="side-menu" />
-      <label class="hamb" for="side-menu"
-        ><i class="fa-solid fa-bars"></i
-      ></label>
-      <nav class="nav">
-        <ul class="menu">
-          <li><a class="selected" href="index.html">INICIO</a></li>
-          <li><a href="iniciativas.html">INICIATIVAS</a></li>
-          <li><a href="negocio.html">NEGOCIO</a></li>
-          <li><a href="usuario.html">USUARIO</a></li>
-          <li><a href="tuopinion.html">TU OPINIÓN</a></li>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iniciativas.html">INICIATIVAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="negocio.html">NEGOCIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="usuario.html">USUARIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tuopinion.html">TU OPINIÓN</a>
+          </li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="container-fluid sin-padding">
-        <div class="row">
-          <div class="col-md-12">
-            <img class="img-fluid" src="imagenes/fondousuario.jpg" alt="fondo usuario">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div>
-              <h2>
-                Cada año se desperdician 2.5 mil millones de toneladas de
-                alimento
-              </h2>
-              <p class="texto-negro">
-                Soñamos con un planeta sin desperdicio de alimentos. Todos los
-                días, la comida no vendida de los restaurantes, supermercados,
-                cafeterías y tiendas favoritas se desperdicia simplemente porque
-                no se vende a tiempo. Descarca nuestra aplicación Share Before
-                Waste y obtené comida a un precio mejor.
-              </p>
-              <div>
-                <button>DESCARGA LA APLICACIÓN</button>
-                <button>APLICATIVO</button>
-              </div>
-            </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid sin-padding">
+    <div class="row">
+      <div class="col-md-12">
+        <img class="img-fluid" src="imagenes/fondousuario.jpg" alt="fondo usuario">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div>
+          <h1 class="titulousuario">
+            Cada año se desperdician 2.5 mil millones de toneladas de alimento
+          </h1>
+          <p class="textousuario">
+            Soñamos con un planeta sin desperdicio de alimentos. Todos los días, la comida no vendida de los restaurantes, supermercados, cafeterías y tiendas favoritas se desperdicia simplemente porque no se vende a tiempo. Descarga nuestra aplicación Share Before Waste y obtén comida a un precio mejor.
+          </p>
+          <div>
+            <button class="text-white" style="background-image: url(imagenes/boton.svg);">DESCARGA LA APLICACIÓN</button>
+            <button class="text-white" style="background-image: url(imagenes/boton.svg);">APLICATIVO</button>
           </div>
         </div>
       </div>
-    </main>
-    <footer>© 2023 Todos los derechos reservados.</footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+  </div>
+  </main>
+  <footer>© 2023 Todos los derechos reservados.</footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+</body>
 </html>
+
