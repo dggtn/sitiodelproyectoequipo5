@@ -240,7 +240,12 @@ header ul{
   width: 100%;
   height: 70rem;
 }
+.fondo-usuario{
+  background-image: url(../imagenes/fondousuario.jpg);
+  width: 100%;
+  height: 70rem;
 
+}
 .texto-negro{
 color: #000;
 font-family: Poppins;
