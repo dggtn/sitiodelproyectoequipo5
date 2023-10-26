@@ -9,9 +9,7 @@ body {
   flex-direction: column;
 }
 
-main {
-  margin-left: 2%;
-}
+
 
 .navbar {
   display: flex;
@@ -247,6 +245,7 @@ header ul{
 
 }
 .texto-negro{
+display: inline;
 color: #000;
 font-family: Poppins;
 font-size: 1.25rem;
@@ -400,6 +399,11 @@ p{
   .item-identidad-imagen {
     flex: 0 0 100%;
   }
+
+}
+.sin-padding {
+  padding-left: 0% !important;
+  padding-right: 0% !important;
 }
 
 
