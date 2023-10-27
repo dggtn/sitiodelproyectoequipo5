@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>INICIO</title>
     <meta
       name="description"
@@ -15,89 +15,118 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/85f636b7ea.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
-
   <body>
-    <header class="header">
-      <a href="/index.html">
-        <img
-          class="logo img-fluid"
-          src="imagenes/share_before_waste_logo.png"
-          alt="logo"
-        />
-      </a>
-      <a href="index.html">INICIO</a>
-      <a href="iniciativas.html">INICIATIVAS</a>
-      <a href="negocio.html">NEGOCIO</a>
-      <a href="usuario.html">USUARIO</a>
-      <a href="tuopinion.html">TU OPINIÓN</a>
-    </header>
-
-    <header class="header-mobile">
-      <a class="logo-link" href="/index.html">
-        <img
-          class="logo img-fluid"
-          src="imagenes/share_before_waste_logo.png"
-          alt="logo"
-        />
-      </a>
-      <input class="side-menu" type="checkbox" id="side-menu" />
-      <label class="hamb" for="side-menu"
-        ><i class="fa-solid fa-bars"></i
-      ></label>
-      <nav class="nav">
-        <ul class="menu">
-          <li><a class="selected" href="index.html">INICIO</a></li>
-          <li><a href="iniciativas.html">INICIATIVAS</a></li>
-          <li><a href="negocio.html">NEGOCIO</a></li>
-          <li><a href="usuario.html">USUARIO</a></li>
-          <li><a href="tuopinion.html">TU OPINIÓN</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">
+          <img
+            class="logo"
+            src="imagenes/share_before_waste_logo.png"
+            alt="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler rounded-pill"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon rounded-pill"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          style="justify-content: end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="iniciativas.html"
+                >INICIATIVAS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="negocio.html">NEGOCIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="usuario.html">USUARIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="tuopinion.html">TU OPINIÓN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <main>
-      <div class="container-fluid sin-padding">
+      <div class="container-fluid text-start px-0 mb">
         <div class="row">
-          <div class="col-md-12">
-            <img
-              class="img-fluid"
-              src="imagenes/fondousuario.jpg"
-              alt="fondo usuario"
-            />
+          <div class="col-md-12" style="position: relative">
+            <img class="img-fluid mb-5" src="./imagenes/fondousuario.jpg" />
+            <div class="col-md-4" style="position: absolute; top: 10px"></div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-6">
             <div>
-              <h1 class="titulousuario">
+              <h1 class="text-success ms-4 mb-5 mt-3">
                 Cada año se desperdician 2.5 mil millones de toneladas de
                 alimento
               </h1>
-              <p class="textousuario">
-                Soñamos con un planeta sin desperdicio de alimentos. Todos los
-                días, la comida no vendida de los restaurantes, supermercados,
-                cafeterías y tiendas favoritas se desperdicia simplemente porque
-                no se vende a tiempo. Descarca nuestra aplicación Share Before
-                Waste y obtené comida a un precio mejor.
-              </p>
-              <div>
-                <button class="boton">
-                  <p class="botontexto">DESCARGA LA APLICACIÓN</p>
-                </button>
-                <button class="boton">
-                  <p class="botontexto">APLICATIVO</p>
-                </button>
-              </div>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="text-black fs-3 ms-4 mb-5">
+              Soñamos con un planeta sin desperdicio de alimentos. Todos los
+              días, la comida no vendida de los restaurantes, supermercados,
+              cafeterías y tiendas favoritas se desperdicia simplemente porque
+              no se vende a tiempo. Descarga nuestra aplicación Share Before
+              Waste y obtén comida a un precio mejor.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-md-12">
+            <button
+              type="button"
+              class="rounded-pill btn btn-success fs-3 fw-bold ms-4"
+            >
+              REGISTRATE AHORA
+            </button>
+            <button
+              type="button"
+              class="rounded-pill btn btn-success fs-3 fw-bold ms-4"
+            >
+              INSTRUCTIVO<svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+              >
+                <path
+                  d="M18.48 6.98942C18.6209 6.62161 18.7 6.21942 18.7 5.80005C18.7 3.97817 17.2219 2.50005 15.4 2.50005C14.7228 2.50005 14.0903 2.7063 13.5678 3.05692C12.6156 1.40692 10.8384 0.300049 8.8 0.300049C5.76125 0.300049 3.3 2.7613 3.3 5.80005C3.3 5.89286 3.30344 5.98567 3.30687 6.07849C1.38187 6.75567 0 8.5913 0 10.75C0 13.4829 2.21719 15.7 4.95 15.7H17.6C20.0303 15.7 22 13.7304 22 11.3C22 9.17224 20.4875 7.39505 18.48 6.98942ZM13.9116 10.0385L10.2884 13.6616C10.0753 13.8747 9.72469 13.8747 9.51156 13.6616L5.88844 10.0385C5.54125 9.6913 5.78875 9.10005 6.27688 9.10005H8.525V5.25005C8.525 4.94755 8.7725 4.70005 9.075 4.70005H10.725C11.0275 4.70005 11.275 4.94755 11.275 5.25005V9.10005H13.5231C14.0113 9.10005 14.2588 9.6913 13.9116 10.0385Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
     </main>
-    <footer>© 2023 Todos los derechos reservados.</footer>
+    <footer class="container-fluid mt-5">
+      <span class="me-auto">© 2023 Todos los derechos reservados.</span>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
