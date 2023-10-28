@@ -4,3 +4,11 @@ footer {
   border-top: 1px solid var(--Color-5, #ADB5BD);
 }
 
+.texto{
+color: #6C757D;
+text-align: center;
+font-style: normal;
+line-height: normal;
+letter-spacing: 0.06875rem;
+}
+
