@@ -68,7 +68,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <h1 class=" ms-4 mt-3"style="color:#1A4301";>
+            <h1 class="ms-4 mt-3" style="color: #1a4301" ;>
               Convierte los alimentos no vendidos en ingresos
             </h1>
             <p class="text-black fs-3 ms-4">
@@ -80,13 +80,37 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
-            <div
-              class="form-floating mb-3 botonblanco ms-4"
-              style="color: white"
-            >
+            <div class="form-floating mb-3 ms-4" style="color: white">
+              <input
+                type="text"
+                class="form-control border border-success rounded-pill"
+                id="cityInput"
+                placeholder="Nombre del Negocio"
+              />
+              <label for="Nameinput">Nombre del Negocio</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-floating mb-3 ms-4" style="color: white">
+          <input
+            type="text"
+            class="form-control border border-success rounded-pill"
+            id="cityInput"
+            placeholder="Numero de teléfono"
+          />
+          <label for="Nameinput">Numero de teléfono</label>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-floating mb-3 ms-4" style="color: white">
               <input
                 type="email"
-                class="form-control border rounded-pill"style="border-color:#1A4301"
+                class="form-control border rounded-pill"
+                style="border-color: #1a4301"
                 id="floatingInput"
                 placeholder="Dirección de correo electrónico"
               />
@@ -98,13 +122,12 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
-            <div
-              class="form-floating mb-3 botonblanco ms-4"
-              style="color: white"
-            >
+            <div class="form-floating mb-3 ms-4" style="color: white">
               <input
                 type="email"
-                class="form-control border rounded-pill"style="border-color:#1A4301";;
+                class="form-control border rounded-pill"
+                style="border-color: #1a4301"
+                ;;
                 id="floatingInput"
                 placeholder="Ciudad"
               />
@@ -112,7 +135,10 @@
             </div>
             <button
               type="button"
-              class="rounded-pill btn fs-3 fw-bold ms-4 mb-3"style="border-color:#1A4301";>
+              class="rounded-pill btn fs-3 fw-bold ms-4 mb-3"
+              style="border-color: #1a4301"
+              ;
+            >
               REGISTRATE AHORA
             </button>
           </div>
@@ -140,73 +166,87 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="text-success mt-3 ms-4">
-              Convierte los alimentos no vendidos en ingresos
-            </h1>
-            <p class="text-black fs-3 ms-4">
-              Cuéntanos sobre tu negocio para comenzar:
-            </p>
+        <div class="container-fluid text-start px-0">
+          <div class="row">
+            <div class="col-md-6 px-5 pt-3">
+              <h2>Cómo funciona</h2>
+              <p class="text-black bold fs-3 bold px-5">Complete el formulario de consulta para registrar su negocio en Share before waste
+                 y agregue sus excedentes de comida en la aplicación. </p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="container">
-        <form id="myForm">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6">
-              <div
-                class="form-floating mb-3 botonblanco ms-4"
-                style="color: white"
-              >
-                <input
-                  type="email"
-                  style="border-color:#1A4301;background-color:#1A4301";
-                  class="form-control border rounded-pill"
-                  id="emailInput"
-                  placeholder="Dirección de correo electrónico"
-                />
-                <label for="emailInput">Dirección de correo electrónico</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div
-                  class="form-floating mb-3 botonblanco ms-4"
-                  style="color: white"
-                >
-                  <input
-                    type="text"
-                    class="form-control border border-success rounded-pill"
-                    id="cityInput"
-                    placeholder="Ciudad"
+            <h2 class=" fw-bold text-center fs-1" style="color: #1a4301";>Empresas que trabajan con nosotros</h2>
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="imagenes/empresa1.png"
+                    class="d-block w-100 img-fluid"
+                    alt="empresa que usa nuestros servicios"
                   />
-                  <label for="cityInput">Ciudad</label>
                 </div>
-                <button
-                  type="submit"
-                  class="rounded-pill btn fs-3 fw-bold ms-4 mb-3"style="border-color:#1A4301;background-color:#1A4301";
-                >
-                  REGÍSTRATE AHORA
-                </button>
-              </div>
-            </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/empresa2.png"
+                    class="d-block w-100 img-fluid"
+                    alt="empresa que usa nuestros servicios"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/empresa3.png"
+                    class="d-block w-100 img-fluid"
+                    alt="empresa que usa nuestros servicios"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/empresa4.png"
+                    class="d-block w-100 img-fluid"
+                    alt="empresa que usa nuestros servicios"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/empresa5.png"
+                    class="d-block w-100 img-fluid"
+                    alt="empresa que usa nuestros servicios"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/empresa6.png"
+                    class="d-block w-100 img-fluid"
+                    alt="empresa que usa nuestros servicios"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/empresa7.png"
+                    class="d-block w-100 img-fluid"
+                    alt="empresa que usa nuestros servicios"/>
+                </div>
           </div>
-        </form>
+        </div>
+        </div>
+      </div>
+    </main>
       </div>
     </main>
     <footer class="container-fluid mt-5 mb-1">
-      <p class=" texto text-center fw-bold space-between mt-5 mb-0">
+      <p class="texto text-center fw-bold space-between mt-5 mb-0">
         Abi Fonzi - Daniela Gangotena - Lautaro Frosio - Martin Malaureille
       </p>
-      <p class=" texto text-center fw-bold space-between mb-0">Sitio Grupal</p>
-      <p class=" texto text-center fw-bold space-between mb-0">
+      <p class="texto text-center fw-bold space-between mb-0">Sitio Grupal</p>
+      <p class="texto text-center fw-bold space-between mb-0">
         Trabajo grupal Diseño y Desarrollo Web
       </p>
-      <p class=" texto text-center fw-bold space-between mb-0">
+      <p class="texto text-center fw-bold space-between mb-0">
         Las imágenes cuentan con derechos reservados de Freepik
       </p>
       <img
