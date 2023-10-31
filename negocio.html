@@ -84,7 +84,7 @@
               <input
                 type="text"
                 class="form-control border border-success rounded-pill"
-                id="cityInput"
+                id="Name"
                 placeholder="Nombre del Negocio"
               />
               <label for="Nameinput">Nombre del Negocio</label>
@@ -95,9 +95,9 @@
       <div class="col-md-6">
         <div class="form-floating mb-3 ms-4" style="color: white">
           <input
-            type="text"
+            type="number"
             class="form-control border border-success rounded-pill"
-            id="cityInput"
+            id="Phone number"
             placeholder="Numero de teléfono"
           />
           <label for="Nameinput">Numero de teléfono</label>
@@ -286,7 +286,7 @@
       </div>
       <script>
         let items = document.querySelectorAll(".carousel .carousel-item");
-        console.log(items.length)
+        console.log(items.length);
         items.forEach((el) => {
           const minPerSlide = 4;
           let next = el.nextElementSibling;
