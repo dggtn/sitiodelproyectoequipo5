@@ -12,6 +12,14 @@ line-height: normal;
 letter-spacing: 0.06875rem;
 }
 
-.verde{
-  color:#1A4301;
+
+
+@media (min-width: 701px) {
+
+  .footer {
+    position: fixed;
+    bottom: 0px;
+  }
+
+  
 }
