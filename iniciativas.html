@@ -15,6 +15,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script src="js/iniciativas.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -71,6 +72,7 @@
             <img class="img-fluid w-100" src="imagenes/donaciones.jpeg" />
             <div class="row">
               <div
+                id="paso1"
                 class="col-md-6 me-3"
                 style="position: absolute; top: 10px; right: 0px"
               >
@@ -124,7 +126,7 @@
                           ></label>
                           <input
                             type="text"
-                            class="rounded form-control bg-light  me-5"
+                            class="rounded form-control bg-light me-5"
                             id="exampleFormControlInput1"
                             placeholder="Otro monto, mayor a $500"
                           />
@@ -183,6 +185,7 @@
                             "
                             ;
                             ;
+                            onclick="siguientePaso()"
                           >
                             CONTINUAR
                           </button>
@@ -191,6 +194,21 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <div
+                id="paso2"
+                class="col-md-6 me-3"
+                style="position: absolute; top: 10px; right: 0px; display: none;"
+              >
+                PASO 2
+                <button onclick="siguientePaso()">Siguiente</button>
+              </div>
+              <div
+                id="paso3"
+                class="col-md-6 me-3"
+                style="position: absolute; top: 10px; right: 0px; display: none;"
+              >
+                PASO 3
               </div>
             </div>
           </div>
