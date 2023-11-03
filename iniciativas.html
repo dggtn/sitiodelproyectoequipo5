@@ -194,18 +194,145 @@
                           </button>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="paso2"
+                  class="col-md-6 me-3"
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    right: 0px;
+                    display: none;
+                  "
+                >
+                  <div class="bg-light rounded ms-5 mt-2">
+                    <div class="mb-3 bg-light rounded">
+                      <p class="text-dark text-center mt-3 bold fs-5">
+                        Completa los siguientes datos
+                      </p>
+                      <div class="row justify-content-end">
+                        <div class="col-md-6">
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label"
+                          ></label>
+                          <input
+                            type="text"
+                            class="rounded form-control border border-dark bg-light me-5"
+                            id="exampleFormControlInput1"
+                            placeholder="Nombre"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label"
+                          ></label>
+                          <input
+                            type="text"
+                            class="rounded form-control border border-dark bg-light me-4"
+                            id="exampleFormControlInput1"
+                            placeholder="Apellido"
+                          />
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label
+                              for="exampleFormControlInput1"
+                              class="form-label"
+                            ></label>
+                            <input
+                              type="text"
+                              class="rounded form-control border border-dark bg-light me-4"
+                              id="exampleFormControlInput1"
+                              placeholder="Fecha de nacimiento"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <label
+                              for="exampleFormControlInput1"
+                              class="form-label"
+                            ></label>
+                            <input
+                              type="text"
+                              class="rounded form-control border border-dark bg-light me-4"
+                              id="exampleFormControlInput1"
+                              placeholder="DNI"
+                            />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label
+                              for="exampleFormControlInput1"
+                              class="form-label"
+                            ></label>
+                            <input
+                              type="text"
+                              class="rounded form-control border border-dark bg-light me-4"
+                              id="exampleFormControlInput1"
+                              placeholder="Correo electrónico"
+                            />
+                          </div>
+                          <div class="col-md-6">
+                            <label
+                              for="exampleFormControlInput1"
+                              class="form-label"
+                            ></label>
+                            <input
+                              type="text"
+                              class="rounded form-control border border-dark bg-light me-4"
+                              id="exampleFormControlInput1"
+                              placeholder="Teléfono"
+                            />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <button
+                              type="button"
+                              class="mb-2 mt-2 text-dark rounded form-control border border-dark bg-light me-4"
+                              onclick="siguientePaso()"
+                            >
+                              ANTERIOR
+                            </button>
+                          </div>
+                          <div class="col-md-6">
+                            <button
+                              type="button"
+                              class="text-dark rounded form-control border border-dark bg-light me-4 mt-2"
+                              onclick="siguientePaso()"
+                            >
+                              SIGUIENTE
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="text-center text-white fw-bold fs-2 mx-5">
+                      <p>
+                        Tu donación cambia vidas y hace la diferencia a quienes
+                        más lo necesitan.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div
-                id="paso2"
+                id="paso3"
                 class="col-md-6 me-3"
                 style="position: absolute; top: 10px; right: 0px; display: none"
               >
                 <div class="bg-light rounded ms-5 mt-2">
                   <div class="mb-3 bg-light rounded">
                     <p class="text-dark text-center mt-3 bold fs-5">
-                      Completa los siguientes datos
+                      Completa los datos de tu tarjeta
                     </p>
                     <div class="row justify-content-end">
                       <div class="col-md-6">
@@ -215,9 +342,36 @@
                         ></label>
                         <input
                           type="text"
-                          class="rounded form-control border border-dark bg-light me-5"
+                          class="rounded form-control bg-light ms-4"
                           id="exampleFormControlInput1"
-                          placeholder="Nombre"
+                          placeholder="Número de Tarjeta"
+                        />
+                      </div>
+
+                      <div class="col-md-6">
+                        <label
+                          for="exampleFormControlInput1"
+                          class="form-label"
+                        ></label>
+                        <input
+                          type="text"
+                          class="rounded form-control border border-dark bg-light me-4"
+                          id="exampleFormControlInput1"
+                          placeholder="Nombre del Titular"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label
+                          for="exampleFormControlInput1"
+                          class="form-label"
+                        ></label>
+                        <input
+                          type="text"
+                          class="rounded form-control border border-dark bg-light me-4"
+                          id="exampleFormControlInput1"
+                          placeholder="Apellido del Titular"
                         />
                       </div>
                       <div class="col-md-6">
@@ -229,201 +383,58 @@
                           type="text"
                           class="rounded form-control border border-dark bg-light me-4"
                           id="exampleFormControlInput1"
-                          placeholder="Apellido"
+                          placeholder="MM/AA"
+                        />
+                        <p class="text-dark bold">Fecha de vencimiento</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label
+                          for="exampleFormControlInput1"
+                          class="form-label"
+                        ></label>
+                        <input
+                          type="text"
+                          class="rounded form-control border border-dark bg-light me-4"
+                          id="exampleFormControlInput1"
+                          placeholder="Correo electrónico"
                         />
                       </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <label
-                            for="exampleFormControlInput1"
-                            class="form-label"
-                          ></label>
-                          <input
-                            type="text"
-                            class="rounded form-control border border-dark bg-light me-4"
-                            id="exampleFormControlInput1"
-                            placeholder="Fecha de nacimiento"
-                          />
-                        </div>
-                        <div class="col-md-6">
-                          <label
-                            for="exampleFormControlInput1"
-                            class="form-label"
-                          ></label>
-                          <input
-                            type="text"
-                            class="rounded form-control border border-dark bg-light me-4"
-                            id="exampleFormControlInput1"
-                            placeholder="DNI"
-                          />
-                        </div>
+                      <div class="col-md-6">
+                        <label
+                          for="exampleFormControlInput1"
+                          class="form-label"
+                        ></label>
+                        <input
+                          type="text"
+                          class="rounded form-control border border-dark bg-light me-4"
+                          id="exampleFormControlInput1"
+                          placeholder="Teléfono"
+                        />
                       </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <label
-                            for="exampleFormControlInput1"
-                            class="form-label"
-                          ></label>
-                          <input
-                            type="text"
-                            class="rounded form-control border border-dark bg-light me-4"
-                            id="exampleFormControlInput1"
-                            placeholder="Correo electrónico"
-                          />
-                        </div>
-                        <div class="col-md-6">
-                          <label
-                            for="exampleFormControlInput1"
-                            class="form-label"
-                          ></label>
-                          <input
-                            type="text"
-                            class="rounded form-control border border-dark bg-light me-4"
-                            id="exampleFormControlInput1"
-                            placeholder="Teléfono"
-                          />
-                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <button
+                          type="button"
+                          class="text-dark rounded form-control border border-dark bg-light me-4"
+                          onclick="siguientePaso()"
+                        >
+                          ANTERIOR
+                        </button>
                       </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <button
-                            type="button"
-                            class="mb-2 mt-2 text-dark rounded form-control border border-dark bg-light me-4"
-                            onclick="siguientePaso()"
-                          >
-                            ANTERIOR
-                          </button>
-                        </div>
-                        <div class="col-md-6">
-                          <button
-                            type="button"
-                            class="text-dark rounded form-control border border-dark bg-light me-4 mt-2"
-                            onclick="siguientePaso()"
-                          >
-                            SIGUIENTE
-                          </button>
-                        </div>
+                      <div class="col-md-6">
+                        <button
+                          type="button"
+                          class="text-dark rounded form-control border border-dark bg-light me-4"
+                          onclick="siguientePaso()"
+                        >
+                          FINALIZAR
+                        </button>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-              <div class=" text-center text-white fw-bold fs-2 mx-5">
-                <p>Tu donación cambia vidas y hace la diferencia a quienes más lo necesitan.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          id="paso3"
-          class="col-md-6 me-3"
-          style="position: absolute; top: 10px; right: 0px; display: none"
-        >
-          <div class="bg-light rounded ms-5 mt-2">
-            <div class="mb-3 bg-light rounded">
-              <p class="text-dark text-center mt-3 bold fs-5">
-                Completa los datos de tu tarjeta
-              </p>
-              <div class="row justify-content-end">
-                <div class="col-md-6">
-                  <label
-                    for="exampleFormControlInput1"
-                    class="form-label"
-                  ></label>
-                  <input
-                    type="text"
-                    class="rounded form-control bg-light ms-4"
-                    id="exampleFormControlInput1"
-                    placeholder="Número de Tarjeta"
-                  />
-                </div>
-
-                <div class="col-md-6">
-                  <label
-                    for="exampleFormControlInput1"
-                    class="form-label"
-                  ></label>
-                  <input
-                    type="text"
-                    class="rounded form-control border border-dark bg-light me-4"
-                    id="exampleFormControlInput1"
-                    placeholder="Nombre del Titular"
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <label
-                    for="exampleFormControlInput1"
-                    class="form-label"
-                  ></label>
-                  <input
-                    type="text"
-                    class="rounded form-control border border-dark bg-light me-4"
-                    id="exampleFormControlInput1"
-                    placeholder="Apellido del Titular"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <label
-                    for="exampleFormControlInput1"
-                    class="form-label"
-                  ></label>
-                  <input
-                    type="text"
-                    class="rounded form-control border border-dark bg-light me-4"
-                    id="exampleFormControlInput1"
-                    placeholder="MM/AA"
-                  />
-                  <p class="text-dark bold">Fecha de vencimiento</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <label
-                    for="exampleFormControlInput1"
-                    class="form-label"
-                  ></label>
-                  <input
-                    type="text"
-                    class="rounded form-control border border-dark bg-light me-4"
-                    id="exampleFormControlInput1"
-                    placeholder="Correo electrónico"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <label
-                    for="exampleFormControlInput1"
-                    class="form-label"
-                  ></label>
-                  <input
-                    type="text"
-                    class="rounded form-control border border-dark bg-light me-4"
-                    id="exampleFormControlInput1"
-                    placeholder="Teléfono"
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <button
-                    type="button"
-                    class="text-dark rounded form-control border border-dark bg-light me-4"
-                    onclick="siguientePaso()"
-                  >
-                    ANTERIOR
-                  </button>
-                </div>
-                <div class="col-md-6">
-                  <button
-                    type="button"
-                    class="text-dark rounded form-control border border-dark bg-light me-4"
-                    onclick="siguientePaso()"
-                  >
-                    FINALIZAR
-                  </button>
                 </div>
               </div>
             </div>
@@ -466,27 +477,27 @@
                     alt="comedor de personas vulnerables"
                   />
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="imagenes/comedor2.png"
-                  class="d-block w-100"
-                  alt="comedor de personas vulnerables"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="imagenes/comedor3.jpg"
-                  class="d-block w-100"
-                  alt="comedor de personas vulnerables"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="imagenes/comedor4.jpg"
-                  class="d-block w-100"
-                  alt="comedor de personas vulnerables"
-                />
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/comedor2.png"
+                    class="d-block w-100"
+                    alt="comedor de personas vulnerables"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/comedor3.jpg"
+                    class="d-block w-100"
+                    alt="comedor de personas vulnerables"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/comedor4.jpg"
+                    class="d-block w-100"
+                    alt="comedor de personas vulnerables"
+                  />
+                </div>
               </div>
             </div>
           </div>
