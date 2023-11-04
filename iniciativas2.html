@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>INICIATIVAS</title>
+    <meta
+      name="description"
+      content="Delivery sustentable de alimentos para ayudar a combatir el desperdicio de comida"
+    />
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="js/iniciativas.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">
+          <img
+            class="logo"
+            src="imagenes/share_before_waste_logo.png"
+            alt="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler rounded-pill"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          style="justify-content: end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="iniciativas.html"
+                >INICIATIVAS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="negocio.html">NEGOCIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="usuario.html">USUARIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="tuopinion.html">TU OPINIÓN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container-fluid text-start px-0">
+        <div class="container-fluid" style="position: relative">
+          <img class="img-fluid w-100" src="imagenes/donaciones.jpeg" />
+          <div
+            class="container-fluid"
+            style="position: absolute; top: 10px; right: 25px"
+          >
+            <!-- PASO1 -->
+            <div class="row">
+              <div class="offset-md-8 col-md-4 bg-light rounded">
+                <form>
+                  <div class="row">
+                    <label class="form-label text-dark bold">Quiero apoyar con donaciones mensuales de</label>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked/>
+                      <label class="btn btn-outline-primary" for="btnradio1">$1000</label>
+                    </div>
+                    <div class="col">
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"/>
+                      <label class="btn btn-outline-primary" for="btnradio2">$1500</label>
+                    </div>
+                    <div class="col">
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"/>
+                      <label class="btn btn-outline-primary" for="btnradio3">$2000</label>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"/>
+                      <label class="btn btn-outline-primary" for="btnradio4">Otro monto, mayor a $500</label>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label for="provincia" class="form-label">Provincia</label>
+                      <select id="provincia" class="form-select" aria-label="Seleccionar una provincia">
+                        <option selected>Seleccione una provincia</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="localidad" class="form-label">Localidad</label>
+                      <select id="localidad" class="form-select" aria-label="Seleccionar una localidad">
+                        <option selected>Seleccione una localidad</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label for="comedor" class="form-label">Comedor</label>
+                      <select id="comedor" class="form-select" aria-label="Seleccionar un comedor">
+                        <option selected>Seleccione un comedor</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <button type="submit" class="btn btn-primary">CONTINUAR</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="pt-4 ms-4 mt-3 mb-4" style="color: #1a4301">
+              ¿Qué pasa si no se logra vender todo el excedente en un día?
+            </h1>
+            <p class="text-dark fs-3 ms-4 mt-2">
+              Redistribuimos los excedentes alimentarios desde comedores hasta
+              los hogares que necesitan alimentos.
+            </p>
+            <p class="text-dark fs-3 ms-4 mt-3 mb-5">
+              Diseñamos un proceso para que las empresas gastronómicas puedan
+              disponer de forma segura toda la comida que les sobra y luego
+              registrar en la aplicación cual fue el sobrante y con esta
+              información, conectamos con las entidades sociales, y nuestros
+              repartidores redistribuyen los alimentos sobrantes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="imagenes/comedor1.png"
+                    class="d-block w-100"
+                    alt="comedor de personas vulnerables"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/comedor2.png"
+                    class="d-block w-100"
+                    alt="comedor de personas vulnerables"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/comedor3.jpg"
+                    class="d-block w-100"
+                    alt="comedor de personas vulnerables"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="imagenes/comedor4.jpg"
+                    class="d-block w-100"
+                    alt="comedor de personas vulnerables"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid mt-5 mb-1">
+      <div class="row">
+        <p class="col texto text-center fw-bold space-between mt-5 mb-0">
+          Abi Fonzi - Daniela Gangotena - Lautaro Frosio - Martin Malaureille
+        </p>
+        <p class="texto text-center fw-bold space-between mb-0">Sitio Grupal</p>
+        <p class="texto text-center fw-bold space-between mb-0">
+          Trabajo grupal Diseño y Desarrollo Web
+        </p>
+        <p class="texto text-center fw-bold space-between mb-0">
+          Las imágenes cuentan con derechos reservados de Freepik
+        </p>
+      </div>
+      <div class="container-fluid mt-5 mb-1 float-md-start">
+        <div class="row justify-content-between">
+          <div class="col-md-1 col-sm-3">
+            <img class="img-fluid" src="imagenes/LogoUADE.png" />
+          </div>
+          <div class="col-md-3 col-sm-9">
+            <p>2023 Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

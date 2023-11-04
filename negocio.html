@@ -198,12 +198,20 @@
               <div class="carousel-item active">
                 <div class="col-md-3">
                   <img
-                    src="imagenes/empresa2.png"
+                    src="imagenes/empresa1.png"
                     class="img-fluid"
                     alt="empresa"
                   />
                 </div>
               </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <img
+                    src="imagenes/empresa2.png"
+                    class="img-fluid"
+                    alt="empresa"
+                  />
+                </div>
               <div class="carousel-item">
                 <div class="col-md-3">
                   <img
@@ -261,7 +269,7 @@
         let items = document.querySelectorAll(".carousel .carousel-item");
         console.log(items.length);
         items.forEach((el) => {
-          const minPerSlide = 4;
+          const minPerSlide = 5;
           let next = el.nextElementSibling;
           for (var i = 1; i < minPerSlide; i++) {
             if (!next) {
