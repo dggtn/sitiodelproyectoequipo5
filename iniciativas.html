@@ -96,7 +96,7 @@
                         checked
                       />
                       <label
-                        class="btn btn btn-outline-success  mb-4 ms-5 text-dark"
+                        class="btn btn btn-outline-success  mb-4 ms-5 text-dark fs-5 "
                         
                         for="btnradio1"
                         >$1000</label
@@ -111,7 +111,7 @@
                         autocomplete="off"
                       />
                       <label
-                        class="btn btn btn-outline-success  mb-4 me-4 text-dark"
+                        class="btn btn btn-outline-success  mb-4 me-4 ms-4 fs-5  text-dark"
                         
                         for="btnradio2"
                         >$1500</label
@@ -126,7 +126,7 @@
                         autocomplete="off"
                       />
                       <label
-                        class="btn btn btn-outline-success  mb-4 ms-0 text-dark ms-2"
+                        class="btn btn btn-outline-success   ms-0 fs-5  text-dark ms-2"
                         
                         for="btnradio3"
                         >$2000</label
@@ -143,7 +143,7 @@
                         autocomplete="off"
                       />
                       <label
-                        class="btn btn-outline-success mb-5 mt-5 text-dark ms-2"
+                        class="btn btn-outline-success fs-5  mb-5 mt-3 text-dark ms-2"
                         
                         for="btnradio4"
                         >Otro monto, mayor a $500</label
@@ -155,12 +155,12 @@
                       <label
                         for="provincia text-dark"
                         style="background-color: white; border-color: black"
-                        class="form-label"
+                        class="form-label fs-5 "
                         >Provincia*</label
                       >
                       <select
                         id="provincia"
-                        class="form-select"
+                        class="form-select "
                         aria-label="Seleccionar una provincia"
                       >
                         <option selected>Seleccione una provincia</option>
@@ -170,7 +170,7 @@
                       </select>
                     </div>
                     <div class="col">
-                      <label for="localidad" class="form-label"
+                      <label for="localidad" class="form-label fs-5 "
                         >Localidad</label
                       >
                       <select
@@ -187,7 +187,7 @@
                   </div>
                   <div class="row mt-2">
                     <div class="col">
-                      <label for="comedor" class="form-label">Comedor</label>
+                      <label for="comedor" class="form-label fs-5 mt-3 ">Comedor</label>
                       <select
                         id="comedor"
                         class="form-select"
@@ -203,7 +203,7 @@
                       <button
                         onclick="siguientePaso()"
                         type="button"
-                        class="btn btn-primary mb-5 mt-4 text-dark"style="background-color:white;border-color:black;"
+                        class="btn btn-primary mb-5 mt-5 fs-5 text-dark"style="background-color:white;border-color:black;"
                       >
                         CONTINUAR
                       </button>
@@ -213,6 +213,7 @@
               </div>
             </div>
             <!-- FIN PASO 1 -->
+            <!-- INICIO PASO 2 -->
             <div class="row"style="display:none;" id="paso2">
               <div
                 class="offset-md-7 bg-white rounded mt-3 me-5"
@@ -220,7 +221,7 @@
               >
                 <form>
                   <div class="row">
-                    <label class="form-label text-dark bold mt-4 fs-3 mb-4 ms-2"
+                    <label class="form-label text-dark bold mt-4 fs-3 mb-4 ms-2 fs-3"
                       >Completa los siguientes datos</label
                     >
                   </div>
@@ -233,7 +234,7 @@
                       ></label>
                       <input
                         type="text"
-                        class="rounded form-control border border-darkt me-5 text-dark"
+                        class="rounded form-control border border-dark me-5 text-dark fs-5"
                         id="exampleFormControlInput1"
                         placeholder="Nombre"
                       />
@@ -247,7 +248,7 @@
                       <input
                         type="text"
                         
-                        class="rounded form-control border border-dark me-5 text-dark"
+                        class="rounded form-control border border-dark me-5 text-dark fs-5"
                         id="exampleFormControlInput1"
                         placeholder="Apellido"
                       />
@@ -262,7 +263,7 @@
                       ></label>
                       <input
                         type="birth"
-                        class="rounded form-control border border-dark me-5 text-dark"
+                        class="rounded form-control border border-dark me-5 text-dark fs-5"
                         id="exampleFormControlInput1"
                         placeholder="Fecha de nacimiento"
                       />
@@ -275,7 +276,7 @@
                       ></label>
                       <input
                         type="text"
-                        class="rounded form-control border border-dark  me-5 text-dark"
+                        class="rounded form-control border border-dark  me-5 text-dark fs-5"
                         id="exampleFormControlInput1"
                         placeholder="DNI"
                       />
@@ -290,7 +291,7 @@
                       ></label>
                       <input
                         type="birth"
-                        class="rounded form-control border border-dark me-5 text-dark"
+                        class="rounded form-control border border-dark me-5 text-dark fs-5 mb-5"
                         id="exampleFormControlInput1"
                         placeholder=" Correo electrónico"
                       />
@@ -303,7 +304,7 @@
                       ></label>
                       <input
                         type="text"
-                        class="rounded form-control border border-dark me-5 text-dark"
+                        class="rounded form-control border border-dark me-5 text-dark fs-5 mb-5"
                         id="exampleFormControlInput1"
                         placeholder="Teléfono"
                       />
@@ -311,7 +312,7 @@
                   </div>
                   <div class="row mt-2">
                     <div class="col">
-                      <button type="submit" class="btn btn-primary mb-5 mt-4 text-dark"style="background-color:white;border-color:black;">
+                      <button type="submit" class=" fs-5 btn btn-primary mb-5 mt-4 text-dark"style="background-color:white;border-color:black;">
                         ANTERIOR
                       </button>
                     </div>
@@ -319,7 +320,7 @@
                       <button
                         onclick="siguientePaso()"
                         type="button"
-                        class="btn btn-primary mb-5 mt-4 text-dark"style="background-color:white;border-color:black;"
+                        class="btn btn-primary mb-5 mt-4 text-dark fs-5"style="background-color:white;border-color:black;"
                       >
                         SIGUIENTE
                       </button>
@@ -329,6 +330,7 @@
               </div>
             </div>
             <!-- FIN PASO 2 -->
+            <!-- INICIO PASO 3 -->
             <div class="row"style="display:none;" id="paso3">
               <div
                 class="offset-md-7 bg-white rounded mt-3 me-5"
@@ -336,7 +338,7 @@
               >
                 <form>
                   <div class="row">
-                    <label class="form-label text-dark bold mt-4 fs-3 mb-4 ms-2"
+                    <label class="form-label text-dark bold mt-4 fs-3 mb-4 ms-2 fs-3"
                       >Completa los datos de tu tarjeta</label
                     >
                   </div>
@@ -348,7 +350,7 @@
                       ></label>
                       <input
                         type="text"
-                        class="rounded form-control border border-dark bg-light me-5"
+                        class="rounded form-control border border-dark me-5 text-dark fs-5"
                         id="exampleFormControlInput1"
                         placeholder="Número de Tarjeta"
                       />
@@ -360,7 +362,7 @@
                       ></label>
                       <input
                         type="text"
-                        class="rounded form-control border border-dark bg-light me-5"
+                        class="rounded form-control border border-dark me-5 text-dark fs-5"
                         id="exampleFormControlInput1"
                         placeholder="Nombres del titular"
                       />
@@ -374,7 +376,7 @@
                       ></label>
                       <input
                         type="birth"
-                        class="rounded form-control border border-dark bg-light me-5"
+                        class="rounded form-control border border-dark me-5 text-dark fs-5"
                         id="exampleFormControlInput1"
                         placeholder="Apellidos del Titular"
                       />
@@ -386,7 +388,7 @@
                       ></label>
                       <input
                         type="text"
-                        class="rounded form-control border border-dark bg-light me-5"
+                        class="rounded form-control border border-dark me-5 text-dark fs-5"
                         id="exampleFormControlInput1"
                         placeholder="DNI"
                       />
@@ -400,7 +402,7 @@
                       ></label>
                       <input
                         type="birth"
-                        class="rounded form-control border border-dark bg-light me-5"
+                        class="rounded form-control border border-dark me-5 text-dark fs-5"
                         id="exampleFormControlInput1"
                         placeholder="MM/AA"
                       />
@@ -409,7 +411,7 @@
                   </div>
                   <div class="row mt-2">
                     <div class="col">
-                      <button type="submit" class="btn btn-primary mb-5 mt-4">
+                      <button type="submit" class="btn btn-primary mb-5 mt-5 fs-5 text-dark"style="background-color:white;border-color:black;">
                         ANTERIOR
                       </button>
                     </div>
@@ -417,7 +419,7 @@
                       <button
                         onclick="donacionExitosa()"
                         type="button"
-                        class="btn btn-primary mb-5 mt-4"
+                        class="btn btn-primary mb-5 mt-5 fs-5 text-dark"style="background-color:white;border-color:black;"
                       >
                         FINALIZAR
                       </button>
@@ -512,7 +514,9 @@
             <img class="img-fluid" src="imagenes/LogoUADE.png" />
           </div>
           <div class="col-md-3 col-sm-9">
-            <p>2023 Todos los derechos reservados.</p>
+            <p class="derechosreservados">
+              2023 Todos los derechos reservados.
+            </p>
           </div>
         </div>
       </div>
