@@ -75,10 +75,13 @@
           >
             <!-- PASO1 -->
             <div class="row" id="paso1">
-              <div class="offset-md-8 col-md-4 bg-light rounded">
+              <div
+                class="offset-md-7 bg-white rounded mt-3 me-5"
+                style="width: 38.8125rem; height: 34.4375rem"
+              >
                 <form>
                   <div class="row">
-                    <label class="form-label text-dark bold"
+                    <label class="form-label text-dark bold mt-4 fs-3 mb-4 ms-2"
                       >Quiero apoyar con donaciones mensuales de</label
                     >
                   </div>
@@ -92,7 +95,10 @@
                         autocomplete="off"
                         checked
                       />
-                      <label class="btn btn-outline-primary" for="btnradio1"
+                      <label
+                        class="btn btn-outline-primary mb-4 ms-5 text-dark"
+                        style="background-color: white; border-color: black"
+                        for="btnradio1"
                         >$1000</label
                       >
                     </div>
@@ -104,7 +110,10 @@
                         id="btnradio2"
                         autocomplete="off"
                       />
-                      <label class="btn btn-outline-primary" for="btnradio2"
+                      <label
+                        class="btn btn-outline-primary mb-4 me-4 text-dark"
+                        style="background-color: white; border-color: black"
+                        for="btnradio2"
                         >$1500</label
                       >
                     </div>
@@ -116,7 +125,10 @@
                         id="btnradio3"
                         autocomplete="off"
                       />
-                      <label class="btn btn-outline-primary" for="btnradio3"
+                      <label
+                        class="btn btn-outline-primary mb-4 ms-0 text-dark ms-2"
+                        style="background-color: white; border-color: black"
+                        for="btnradio3"
                         >$2000</label
                       >
                     </div>
@@ -130,15 +142,21 @@
                         id="btnradio4"
                         autocomplete="off"
                       />
-                      <label class="btn btn-outline-primary" for="btnradio4"
+                      <label
+                        class="btn btn-outline-primary mb-5 mt-5 text-dark ms-2"
+                        style="background-color: white; border-color: black"
+                        for="btnradio4"
                         >Otro monto, mayor a $500</label
                       >
                     </div>
                   </div>
                   <div class="row mt-2">
                     <div class="col">
-                      <label for="provincia" class="form-label"
-                        >Provincia</label
+                      <label
+                        for="provincia text-dark"
+                        style="background-color: white; border-color: black"
+                        class="form-label"
+                        >Provincia*</label
                       >
                       <select
                         id="provincia"
@@ -182,7 +200,11 @@
                       </select>
                     </div>
                     <div class="col">
-                      <button onclick=siguientePaso() type="button" class="btn btn-primary mb-5 mt-4">
+                      <button
+                        onclick="siguientePaso()"
+                        type="button"
+                        class="btn btn-primary mb-5 mt-4 text-dark"style="background-color:white;border-color:black;"
+                      >
                         CONTINUAR
                       </button>
                     </div>
@@ -191,12 +213,131 @@
               </div>
             </div>
             <!-- FIN PASO 1 -->
-            <div class="row mt-2"id="paso2"style="display:none">
-              <div class="offset-md-8 col-md-4 bg-light rounded">
+            <div class="row"style="display:none;" id="paso2">
+              <div
+                class="offset-md-7 bg-white rounded mt-3 me-5"
+                style="width: 38.8125rem; height: 34.4375rem"
+              >
                 <form>
+                  <div class="row">
+                    <label class="form-label text-dark bold mt-4 fs-3 mb-4 ms-2"
+                      >Completa los siguientes datos</label
+                    >
+                  </div>
                   <div class="row mt-2">
-                    <label class="form-label text-dark bold"
-                      >Quiero apoyar con donaciones mensuales de</label
+                    <div class="col">
+                      <label
+                        for="exampleFormControlInput1"
+                        style="background-color:white;"
+                        class="form-label"
+                      ></label>
+                      <input
+                        type="text"
+                        class="rounded form-control border border-darkt me-5 text-dark"
+                        id="exampleFormControlInput1"
+                        placeholder="Nombre"
+                      />
+                    </div>
+                    <div class="col">
+                      <label
+                        for="exampleFormControlInput1"
+                        style="background-color:white;"
+                        class="form-label"
+                      ></label>
+                      <input
+                        type="text"
+                        
+                        class="rounded form-control border border-dark me-5 text-dark"
+                        id="exampleFormControlInput1"
+                        placeholder="Apellido"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label
+                        for="exampleFormControlInput1"
+                        style="background-color:white;"
+                        class="form-label"
+                      ></label>
+                      <input
+                        type="birth"
+                        class="rounded form-control border border-dark me-5 text-dark"
+                        id="exampleFormControlInput1"
+                        placeholder="Fecha de nacimiento"
+                      />
+                    </div>
+                    <div class="col">
+                      <label
+                        for="exampleFormControlInput1"
+                        style="background-color:white;"
+                        class="form-label"
+                      ></label>
+                      <input
+                        type="text"
+                        class="rounded form-control border border-dark  me-5 text-dark"
+                        id="exampleFormControlInput1"
+                        placeholder="DNI"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label
+                        for="exampleFormControlInput1"
+                        style="background-color:white;"
+                        class="form-label"
+                      ></label>
+                      <input
+                        type="birth"
+                        class="rounded form-control border border-dark me-5 text-dark"
+                        id="exampleFormControlInput1"
+                        placeholder=" Correo electrónico"
+                      />
+                    </div>
+                    <div class="col">
+                      <label
+                        for="exampleFormControlInput1"
+                        style="background-color:white;"
+                        class="form-label"
+                      ></label>
+                      <input
+                        type="text"
+                        class="rounded form-control border border-dark me-5 text-dark"
+                        id="exampleFormControlInput1"
+                        placeholder="Teléfono"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <button type="submit" class="btn btn-primary mb-5 mt-4 text-dark"style="background-color:white;border-color:black;">
+                        ANTERIOR
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button
+                        onclick="siguientePaso()"
+                        type="button"
+                        class="btn btn-primary mb-5 mt-4 text-dark"style="background-color:white;border-color:black;"
+                      >
+                        SIGUIENTE
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- FIN PASO 2 -->
+            <div class="row"style="display:none;" id="paso3">
+              <div
+                class="offset-md-7 bg-white rounded mt-3 me-5"
+                style="width: 38.8125rem; height: 34.4375rem"
+              >
+                <form>
+                  <div class="row">
+                    <label class="form-label text-dark bold mt-4 fs-3 mb-4 ms-2"
+                      >Completa los datos de tu tarjeta</label
                     >
                   </div>
                   <div class="row mt-2">
@@ -209,7 +350,7 @@
                         type="text"
                         class="rounded form-control border border-dark bg-light me-5"
                         id="exampleFormControlInput1"
-                        placeholder="Nombre"
+                        placeholder="Número de Tarjeta"
                       />
                     </div>
                     <div class="col">
@@ -221,7 +362,7 @@
                         type="text"
                         class="rounded form-control border border-dark bg-light me-5"
                         id="exampleFormControlInput1"
-                        placeholder="Apellido"
+                        placeholder="Nombres del titular"
                       />
                     </div>
                   </div>
@@ -235,24 +376,24 @@
                         type="birth"
                         class="rounded form-control border border-dark bg-light me-5"
                         id="exampleFormControlInput1"
-                        placeholder="Fecha de nacimiento"
+                        placeholder="Apellidos del Titular"
                       />
                     </div>
-                      <div class="col">
-                        <label
-                          for="exampleFormControlInput1"
-                          class="form-label"
-                        ></label>
-                        <input
-                          type="text"
-                          class="rounded form-control border border-dark bg-light me-5"
-                          id="exampleFormControlInput1"
-                          placeholder="DNI"
-                        />
+                    <div class="col">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label"
+                      ></label>
+                      <input
+                        type="text"
+                        class="rounded form-control border border-dark bg-light me-5"
+                        id="exampleFormControlInput1"
+                        placeholder="DNI"
+                      />
                     </div>
                   </div>
                   <div class="row mt-2">
-                    <div class="col">
+                    <div class="col-md-6">
                       <label
                         for="exampleFormControlInput1"
                         class="form-label"
@@ -261,183 +402,90 @@
                         type="birth"
                         class="rounded form-control border border-dark bg-light me-5"
                         id="exampleFormControlInput1"
-                        placeholder=" Correo electrónico"
+                        placeholder="MM/AA"
                       />
-                    </div>
-                      <div class="col">
-                        <label
-                          for="exampleFormControlInput1"
-                          class="form-label"
-                        ></label>
-                        <input
-                          type="text"
-                          class="rounded form-control border border-dark bg-light me-5"
-                          id="exampleFormControlInput1"
-                          placeholder="Teléfono"
-                        />
+                      <p style="font-size: 0.9375rem">Fecha de vencimiento</p>
                     </div>
                   </div>
                   <div class="row mt-2">
-                  <div class="col">
-                    <button type="submit" class="btn btn-primary mb-5 mt-4">
-                      ANTERIOR
-                    </button>
-                  </div>
-                  <div class="col">
-                    <button onclick=siguientePaso() type="button" class="btn btn-primary mb-5 mt-4">
-                      SIGUIENTE
-                    </button>
-                  </div>
+                    <div class="col">
+                      <button type="submit" class="btn btn-primary mb-5 mt-4">
+                        ANTERIOR
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button
+                        onclick="donacionExitosa()"
+                        type="button"
+                        class="btn btn-primary mb-5 mt-4"
+                      >
+                        FINALIZAR
+                      </button>
+                    </div>
                   </div>
                 </form>
               </div>
             </div>
-<!-- FIN PASO 2 -->
-<div class="row mt-2" id="paso3"style="display:none">
-  <div class="offset-md-8 col-md-4 bg-light rounded">
-    <form>
-      <div class="row mt-2">
-        <label class="form-label text-dark bold"
-          >Quiero apoyar con donaciones mensuales de</label
-        >
-      </div>
-      <div class="row mt-2">
-        <div class="col">
-          <label
-            for="exampleFormControlInput1"
-            class="form-label"
-          ></label>
-          <input
-            type="text"
-            class="rounded form-control border border-dark bg-light me-5"
-            id="exampleFormControlInput1"
-            placeholder="Número de Tarjeta"
-          />
-        </div>
-        <div class="col">
-          <label
-            for="exampleFormControlInput1"
-            class="form-label"
-          ></label>
-          <input
-            type="text"
-            class="rounded form-control border border-dark bg-light me-5"
-            id="exampleFormControlInput1"
-            placeholder="Nombres del titular"
-          />
-        </div>
-      </div>
-      <div class="row mt-2">
-        <div class="col">
-          <label
-            for="exampleFormControlInput1"
-            class="form-label"
-          ></label>
-          <input
-            type="birth"
-            class="rounded form-control border border-dark bg-light me-5"
-            id="exampleFormControlInput1"
-            placeholder="Apellidos del Titular"
-          />
-        </div>
-          <div class="col">
-            <label
-              for="exampleFormControlInput1"
-              class="form-label"
-            ></label>
-            <input
-              type="text"
-              class="rounded form-control border border-dark bg-light me-5"
-              id="exampleFormControlInput1"
-              placeholder="DNI"
-            />
-        </div>
-      </div>
-      <div class="row mt-2">
-        <div class="col-md-6">
-          <label
-            for="exampleFormControlInput1"
-            class="form-label"
-          ></label>
-          <input
-            type="birth"
-            class="rounded form-control border border-dark bg-light me-5"
-            id="exampleFormControlInput1"
-            placeholder="MM/AA"
-          />
-          <p style="font-size: 0.9375rem;">Fecha de vencimiento</p>
-        </div>
-        </div>
-        <div class="row mt-2">
-          <div class="col">
-            <button type="submit" class="btn btn-primary mb-5 mt-4">
-              ANTERIOR
-            </button>
-          </div>
-          <div class="col">
-            <button onclick=donacionExitosa() type="button" class="btn btn-primary mb-5 mt-4">FINALIZAR</button>
-          </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!-- fin paso 3--->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="pt-4 ms-4 mt-3 mb-4" style="color: #1a4301">
-              ¿Qué pasa si no se logra vender todo el excedente en un día?
-            </h1>
-            <p class="text-dark fs-3 ms-4 mt-2">
-              Redistribuimos los excedentes alimentarios desde comedores hasta
-              los hogares que necesitan alimentos.
-            </p>
-            <p class="text-dark fs-3 ms-4 mt-3 mb-5">
-              Diseñamos un proceso para que las empresas gastronómicas puedan
-              disponer de forma segura toda la comida que les sobra y luego
-              registrar en la aplicación cual fue el sobrante y con esta
-              información, conectamos con las entidades sociales, y nuestros
-              repartidores redistribuyen los alimentos sobrantes.
-            </p>
           </div>
         </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <div
-              id="carouselExampleSlidesOnly"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="imagenes/comedor1.png"
-                    class="d-block w-100"
-                    alt="comedor de personas vulnerables"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="imagenes/comedor2.png"
-                    class="d-block w-100"
-                    alt="comedor de personas vulnerables"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="imagenes/comedor3.jpg"
-                    class="d-block w-100"
-                    alt="comedor de personas vulnerables"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="imagenes/comedor4.jpg"
-                    class="d-block w-100"
-                    alt="comedor de personas vulnerables"
-                  />
+        <!-- fin paso 3--->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="pt-4 ms-4 mt-3 mb-4" style="color: #1a4301">
+                ¿Qué pasa si no se logra vender todo el excedente en un día?
+              </h1>
+              <p class="text-dark fs-3 ms-4 mt-2">
+                Redistribuimos los excedentes alimentarios desde comedores hasta
+                los hogares que necesitan alimentos.
+              </p>
+              <p class="text-dark fs-3 ms-4 mt-3 mb-5">
+                Diseñamos un proceso para que las empresas gastronómicas puedan
+                disponer de forma segura toda la comida que les sobra y luego
+                registrar en la aplicación cual fue el sobrante y con esta
+                información, conectamos con las entidades sociales, y nuestros
+                repartidores redistribuyen los alimentos sobrantes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div
+                id="carouselExampleSlidesOnly"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="imagenes/comedor1.png"
+                      class="d-block w-100"
+                      alt="comedor de personas vulnerables"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imagenes/comedor2.png"
+                      class="d-block w-100"
+                      alt="comedor de personas vulnerables"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imagenes/comedor3.jpg"
+                      class="d-block w-100"
+                      alt="comedor de personas vulnerables"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="imagenes/comedor4.jpg"
+                      class="d-block w-100"
+                      alt="comedor de personas vulnerables"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
