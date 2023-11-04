@@ -67,373 +67,127 @@
     </nav>
     <main>
       <div class="container-fluid text-start px-0">
-        <div class="row">
-          <div class="col-md-12" style="position: relative">
-            <img class="img-fluid w-100" src="imagenes/donaciones.jpeg" />
+        <div class="container-fluid" style="position: relative">
+          <img class="img-fluid w-100" src="imagenes/donaciones.jpeg" />
+          <div
+            class="container-fluid"
+            style="position: absolute; top: 10px; right: 25px"
+          >
+            <!-- PASO1 -->
             <div class="row">
-              <!-- INICIO PASO 1 -->
-              <div
-                id="paso1"
-                class="col-md-7 me-3 mt-4 fs-3"
-                style="position: absolute; top: 10px; right: 0px"
-              >
-                <div class="bg-light rounded ms-5 mt-4">
-                  <div class="mb-3 bg-light rounded">
-                    <p class="text-dark text-center mt-3 bold fs-2">
-                      Quiero apoyar con donaciones mensuales de
-                    </p>
-                    <div class="row justify-content-end">
-                      <div class="col-md-4">
-                        <div
-                          class="btn-group"
-                          role="group"
-                          aria-label="Basic radio toggle button group"
-                        >
-                          <input
-                            type="radio"
-                            class="btn-check"
-                            name="btnradio"
-                            id="btnradio1"
-                            autocomplete="off"
-                            checked
-                          />
-                          <label class="btn btn-outline-primary" for="btnradio1"
-                            >Radio 1</label
-                          >
-
-                          <input
-                            type="radio"
-                            class="btn-check"
-                            name="btnradio"
-                            id="btnradio2"
-                            autocomplete="off"
-                          />
-                          <label class="btn btn-outline-primary" for="btnradio2"
-                            >Radio 2</label
-                          >
-
-                          <input
-                            type="radio"
-                            class="btn-check"
-                            name="btnradio"
-                            id="btnradio3"
-                            autocomplete="off"
-                          />
-                          <label class="btn btn-outline-primary" for="btnradio3"
-                            >Radio 3</label
-                          >
-                          <input
-                            type="radio"
-                            class="btn-check"
-                            name="btnradio"
-                            id="btnradio3"
-                            autocomplete="off"
-                          />
-                          <label class="btn btn-outline-primary" for="btnradio3"
-                            >Radio 4</label
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label
-                          for="exampleFormControlInput1"
-                          class="form-label mt-3"
-                          >Provincia</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control border border-dark bg-light me-4"
-                          style="border-radius: 25rem"
-                          id="exampleFormControlInput1"
-                          placeholder="Seleccione una provincia"
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label
-                          for="exampleFormControlInput1"
-                          class="form-label mt-3"
-                          >Localidad</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control border border-dark bg-light me-4"
-                          style="border-radius: 625rem"
-                          id="exampleFormControlInput1"
-                          placeholder="Localidad"
-                        />
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label
-                          for="exampleFormControlInput1"
-                          class="form-label mt-2"
-                          >Comedor</label
-                        >
-                        <input
-                          type="text"
-                          class="rounded form-control border border-dark bg-light me-5"
-                          id="exampleFormControlInput1"
-                          style="border-radius: 625rem"
-                          ;
-                          placeholder="$1500"
-                        />
-                      </div>
-
-                      <div class="col-md-6 mt-3">
-                        <button
-                          type="button"
-                          style="border-radius: 625rem"
-                          class="text-dark form-control border border-dark bg-light mt-4 me-4"
-                          onclick="siguientePaso()"
-                        >
-                          CONTINUAR
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- FIN PASO 1 -->
-            <!-- INICIO PASO 2 -->
-            <div
-              id="paso2"
-              class="col-md-6 me-3"
-              style="position: absolute; top: 10px; right: 0px; display: none"
-            >
-              <div class="bg-light rounded ms-5 mt-2">
-                <div class="mb-3 bg-light rounded">
-                  <p class="text-dark text-center mt-3 bold fs-5">
-                    Completa los siguientes datos
-                  </p>
-                  <div class="row justify-content-end">
-                    <div class="col-md-6">
-                      <label
-                        for="exampleFormControlInput1"
-                        class="form-label"
-                      ></label>
-                      <input
-                        type="text"
-                        class="rounded form-control border border-dark bg-light me-5"
-                        id="exampleFormControlInput1"
-                        placeholder="Nombre"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <label
-                        for="exampleFormControlInput1"
-                        class="form-label"
-                      ></label>
-                      <input
-                        type="text"
-                        class="rounded form-control border border-dark bg-light me-4"
-                        id="exampleFormControlInput1"
-                        placeholder="Apellido"
-                      />
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label
-                          for="exampleFormControlInput1"
-                          class="form-label"
-                        ></label>
-                        <input
-                          type="text"
-                          class="rounded form-control border border-dark bg-light me-4"
-                          id="exampleFormControlInput1"
-                          placeholder="Fecha de nacimiento"
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label
-                          for="exampleFormControlInput1"
-                          class="form-label"
-                        ></label>
-                        <input
-                          type="text"
-                          class="rounded form-control border border-dark bg-light me-4"
-                          id="exampleFormControlInput1"
-                          placeholder="DNI"
-                        />
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label
-                          for="exampleFormControlInput1"
-                          class="form-label"
-                        ></label>
-                        <input
-                          type="text"
-                          class="rounded form-control border border-dark bg-light me-4"
-                          id="exampleFormControlInput1"
-                          placeholder="Correo electrónico"
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label
-                          for="exampleFormControlInput1"
-                          class="form-label"
-                        ></label>
-                        <input
-                          type="text"
-                          class="rounded form-control border border-dark bg-light me-4"
-                          id="exampleFormControlInput1"
-                          placeholder="Teléfono"
-                        />
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <button
-                          type="button"
-                          class="mb-2 mt-2 text-dark rounded form-control border border-dark bg-light me-4"
-                          onclick="pasoAnterior()"
-                        >
-                          ANTERIOR
-                        </button>
-                      </div>
-                      <div class="col-md-6">
-                        <button
-                          type="button"
-                          class="text-dark rounded form-control border border-dark bg-light me-4 mt-2"
-                          onclick="siguientePaso()"
-                        >
-                          SIGUIENTE
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- FIN PASO 2 -->
-            <!-- INICIO PASO 3 -->
-            <div
-              id="paso3"
-              class="col-md-6 me-3"
-              style="position: absolute; top: 10px; right: 0px; display: none"
-            >
-              <div class="bg-light rounded ms-5 mt-2">
-                <div class="mb-3 bg-light rounded">
-                  <p class="text-dark text-center mt-3 bold fs-5">
-                    Completa los datos de tu tarjeta
-                  </p>
-                  <div class="row justify-content-end">
-                    <div class="col-md-6">
-                      <label
-                        for="exampleFormControlInput1"
-                        class="form-label"
-                      ></label>
-                      <input
-                        type="text"
-                        class="rounded form-control bg-light ms-4"
-                        id="exampleFormControlInput1"
-                        placeholder="Número de Tarjeta"
-                      />
-                    </div>
-
-                    <div class="col-md-6">
-                      <label
-                        for="exampleFormControlInput1"
-                        class="form-label"
-                      ></label>
-                      <input
-                        type="text"
-                        class="rounded form-control border border-dark bg-light me-4"
-                        id="exampleFormControlInput1"
-                        placeholder="Nombre del Titular"
-                      />
-                    </div>
-                  </div>
+              <div class="offset-md-8 col-md-4 bg-light rounded">
+                <form>
                   <div class="row">
-                    <div class="col-md-6">
-                      <label
-                        for="exampleFormControlInput1"
-                        class="form-label"
-                      ></label>
-                      <input
-                        type="text"
-                        class="rounded form-control border border-dark bg-light me-4"
-                        id="exampleFormControlInput1"
-                        placeholder="Apellido del Titular"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <label
-                        for="exampleFormControlInput1"
-                        class="form-label"
-                      ></label>
-                      <input
-                        type="text"
-                        class="rounded form-control border border-dark bg-light me-4"
-                        id="exampleFormControlInput1"
-                        placeholder="MM/AA"
-                      />
-                      <p class="text-dark bold">Fecha de vencimiento</p>
-                    </div>
+                    <label class="form-label text-dark bold"
+                      >Quiero apoyar con donaciones mensuales de</label
+                    >
                   </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <label
-                        for="exampleFormControlInput1"
-                        class="form-label"
-                      ></label>
+                  <div class="row mt-2">
+                    <div class="col">
                       <input
-                        type="text"
-                        class="rounded form-control border border-dark bg-light me-4"
-                        id="exampleFormControlInput1"
-                        placeholder="Correo electrónico"
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="btnradio1"
+                        autocomplete="off"
+                        checked
                       />
-                    </div>
-                    <div class="col-md-6">
-                      <label
-                        for="exampleFormControlInput1"
-                        class="form-label"
-                      ></label>
-                      <input
-                        type="text"
-                        class="rounded form-control border border-dark bg-light me-4"
-                        id="exampleFormControlInput1"
-                        placeholder="Teléfono"
-                      />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <button
-                        type="button"
-                        class="text-dark rounded form-control border border-dark bg-light me-4"
-                        onclick="pasoAnterior()"
+                      <label class="btn btn-outline-primary" for="btnradio1"
+                        >$1000</label
                       >
-                        ANTERIOR
-                      </button>
                     </div>
-                    <div class="col-md-6">
-                      <button
-                        type="button"
-                        class="text-dark rounded form-control border border-dark bg-light me-4"
-                        onclick="donacionExitosa()"
+                    <div class="col">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="btnradio2"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-outline-primary" for="btnradio2"
+                        >$1500</label
                       >
-                        FINALIZAR
+                    </div>
+                    <div class="col">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="btnradio3"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-outline-primary" for="btnradio3"
+                        >$2000</label
+                      >
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="btnradio4"
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-outline-primary" for="btnradio4"
+                        >Otro monto, mayor a $500</label
+                      >
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label for="provincia" class="form-label"
+                        >Provincia</label
+                      >
+                      <select
+                        id="provincia"
+                        class="form-select"
+                        aria-label="Seleccionar una provincia"
+                      >
+                        <option selected>Seleccione una provincia</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="localidad" class="form-label"
+                        >Localidad</label
+                      >
+                      <select
+                        id="localidad"
+                        class="form-select"
+                        aria-label="Seleccionar una localidad"
+                      >
+                        <option selected>Seleccione una localidad</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label for="comedor" class="form-label">Comedor</label>
+                      <select
+                        id="comedor"
+                        class="form-select"
+                        aria-label="Seleccionar un comedor"
+                      >
+                        <option selected>Seleccione un comedor</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <button type="submit" class="btn btn-primary mb-5 mt-4">
+                        CONTINUAR
                       </button>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <!-- FIN PASO 3 -->
-            <div class="row">
-              <div class="col-md-12">
-                <div class="text-center text-white fw-bold fs-2 mx-5">
-                  <p>
-                    Tu donación cambia vidas y hace la diferencia a quienes más
-                    lo necesitan.
-                  </p>
-                </div>
+                </form>
               </div>
             </div>
           </div>
