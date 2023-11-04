@@ -74,7 +74,7 @@
             style="position: absolute; top: 10px; right: 25px"
           >
             <!-- PASO1 -->
-            <div class="row">
+            <div class="row" id="paso1">
               <div class="offset-md-8 col-md-4 bg-light rounded">
                 <form>
                   <div class="row">
@@ -146,9 +146,9 @@
                         aria-label="Seleccionar una provincia"
                       >
                         <option selected>Seleccione una provincia</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="1">Mendoza</option>
+                        <option value="2">Buenos Aires</option>
+                        <option value="3">Cordoba</option>
                       </select>
                     </div>
                     <div class="col">
@@ -161,8 +161,8 @@
                         aria-label="Seleccionar una localidad"
                       >
                         <option selected>Seleccione una localidad</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
+                        <option value="1">Ciudad de Córdoba</option>
+                        <option value="2">two</option>
                         <option value="3">Three</option>
                       </select>
                     </div>
@@ -176,13 +176,13 @@
                         aria-label="Seleccionar un comedor"
                       >
                         <option selected>Seleccione un comedor</option>
-                        <option value="1">One</option>
+                        <option value="1">uno</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
                     </div>
                     <div class="col">
-                      <button type="submit" class="btn btn-primary mb-5 mt-4">
+                      <button onclick=siguientePaso() type="button" class="btn btn-primary mb-5 mt-4">
                         CONTINUAR
                       </button>
                     </div>
@@ -190,9 +190,198 @@
                 </form>
               </div>
             </div>
-          </div>
+            <!-- FIN PASO 1 -->
+            <div class="row mt-2"id="paso2"style="display:none">
+              <div class="offset-md-8 col-md-4 bg-light rounded">
+                <form>
+                  <div class="row mt-2">
+                    <label class="form-label text-dark bold"
+                      >Quiero apoyar con donaciones mensuales de</label
+                    >
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label"
+                      ></label>
+                      <input
+                        type="text"
+                        class="rounded form-control border border-dark bg-light me-5"
+                        id="exampleFormControlInput1"
+                        placeholder="Nombre"
+                      />
+                    </div>
+                    <div class="col">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label"
+                      ></label>
+                      <input
+                        type="text"
+                        class="rounded form-control border border-dark bg-light me-5"
+                        id="exampleFormControlInput1"
+                        placeholder="Apellido"
+                      />
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label"
+                      ></label>
+                      <input
+                        type="birth"
+                        class="rounded form-control border border-dark bg-light me-5"
+                        id="exampleFormControlInput1"
+                        placeholder="Fecha de nacimiento"
+                      />
+                    </div>
+                      <div class="col">
+                        <label
+                          for="exampleFormControlInput1"
+                          class="form-label"
+                        ></label>
+                        <input
+                          type="text"
+                          class="rounded form-control border border-dark bg-light me-5"
+                          id="exampleFormControlInput1"
+                          placeholder="DNI"
+                        />
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label"
+                      ></label>
+                      <input
+                        type="birth"
+                        class="rounded form-control border border-dark bg-light me-5"
+                        id="exampleFormControlInput1"
+                        placeholder=" Correo electrónico"
+                      />
+                    </div>
+                      <div class="col">
+                        <label
+                          for="exampleFormControlInput1"
+                          class="form-label"
+                        ></label>
+                        <input
+                          type="text"
+                          class="rounded form-control border border-dark bg-light me-5"
+                          id="exampleFormControlInput1"
+                          placeholder="Teléfono"
+                        />
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                  <div class="col">
+                    <button type="submit" class="btn btn-primary mb-5 mt-4">
+                      ANTERIOR
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button onclick=siguientePaso() type="button" class="btn btn-primary mb-5 mt-4">
+                      SIGUIENTE
+                    </button>
+                  </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+<!-- FIN PASO 2 -->
+<div class="row mt-2" id="paso3"style="display:none">
+  <div class="offset-md-8 col-md-4 bg-light rounded">
+    <form>
+      <div class="row mt-2">
+        <label class="form-label text-dark bold"
+          >Quiero apoyar con donaciones mensuales de</label
+        >
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <label
+            for="exampleFormControlInput1"
+            class="form-label"
+          ></label>
+          <input
+            type="text"
+            class="rounded form-control border border-dark bg-light me-5"
+            id="exampleFormControlInput1"
+            placeholder="Número de Tarjeta"
+          />
+        </div>
+        <div class="col">
+          <label
+            for="exampleFormControlInput1"
+            class="form-label"
+          ></label>
+          <input
+            type="text"
+            class="rounded form-control border border-dark bg-light me-5"
+            id="exampleFormControlInput1"
+            placeholder="Nombres del titular"
+          />
         </div>
       </div>
+      <div class="row mt-2">
+        <div class="col">
+          <label
+            for="exampleFormControlInput1"
+            class="form-label"
+          ></label>
+          <input
+            type="birth"
+            class="rounded form-control border border-dark bg-light me-5"
+            id="exampleFormControlInput1"
+            placeholder="Apellidos del Titular"
+          />
+        </div>
+          <div class="col">
+            <label
+              for="exampleFormControlInput1"
+              class="form-label"
+            ></label>
+            <input
+              type="text"
+              class="rounded form-control border border-dark bg-light me-5"
+              id="exampleFormControlInput1"
+              placeholder="DNI"
+            />
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-6">
+          <label
+            for="exampleFormControlInput1"
+            class="form-label"
+          ></label>
+          <input
+            type="birth"
+            class="rounded form-control border border-dark bg-light me-5"
+            id="exampleFormControlInput1"
+            placeholder="MM/AA"
+          />
+          <p style="font-size: 0.9375rem;">Fecha de vencimiento</p>
+        </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <button type="submit" class="btn btn-primary mb-5 mt-4">
+              ANTERIOR
+            </button>
+          </div>
+          <div class="col">
+            <button onclick=donacionExitosa() type="button" class="btn btn-primary mb-5 mt-4">FINALIZAR</button>
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- fin paso 3--->
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
