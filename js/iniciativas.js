@@ -39,11 +39,10 @@ function seleccionar2000(){
 
 }
 function seleccionarOtroMonto(){
-    montoADonar=2000
+    montoADonar=500;
     let botonOtroMonto = document.getElementById("otroMonto")
     botonOtroMonto.style.display= "block";
-
-
+    botonOtroMonto.value=500;
 }
 function siguientePaso() {
     let paso = document.getElementById("paso" + pasoActual)
