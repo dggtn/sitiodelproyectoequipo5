@@ -138,3 +138,4 @@ function cargarLocalidades(provinciaSeleccionada) {
 
     comboLocalidades.innerHTML = opciones
 }
+

@@ -15,6 +15,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script src="js/enviarOpinion.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -83,18 +84,18 @@
       <div class="col-md-6 ms-4">
         <div class="form-floating mb-3" style="color: white">
           <input
-            type="email"
-            class="form-control  text-dark bold border text-dark border-success rounded-pill"
-            id="floatingInput"
+            type="text"
+            class="form-control text-dark bold border text-dark border-success rounded-pill"
+            id="nombre"
             placeholder="Nombre y apellido "
           />
           <label for="floatingInput">Nombre</label>
         </div>
         <div class="form-floating mb-3" style="color: white">
           <input
-            type="email"
-            class="form-control text-dark bold  border border-success rounded-pill"
-            id="floatingInput"
+            type="text"
+            class="form-control text-dark bold border border-success rounded-pill"
+            id="apellido"
             placeholder="Apellido "
           />
           <label for="floatingInput">Apellido</label>
@@ -103,8 +104,8 @@
           <div class="form-floating mb-3" style="color: white">
             <input
               type="email"
-              class="form-control text-dark bold  border border-success rounded-pill"
-              id="floatingInput"
+              class="form-control text-dark bold border border-success rounded-pill"
+              id="email"
               placeholder="Correo electrónico "
             />
             <label for="floatingInput">Dirección de correo electrónico</label>
@@ -113,9 +114,9 @@
         <div class="form-floating mb-3">
           <textarea
             class="form-control bold border border-success"
-            style=" height: 250px"
+            style="height: 250px"
             ;
-            id="InputTextArea"
+            id="comentarios"
             placeholder="Comentarios"
           ></textarea>
           <label for="floatingInput">Comentarios</label>
@@ -123,7 +124,8 @@
         <button
           type="button"
           class="col-md-6 text-center btn text-dark bold border border-success rounded-pill fs-3 fw-bold ms-2 mt-3 mb-5"
-          style=" background-color:white"
+          style="background-color: white"
+          onclick="enviarOpinion()"
         >
           ENVIAR
         </button>
