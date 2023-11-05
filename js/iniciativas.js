@@ -11,12 +11,16 @@ function siguientePaso() {
 }
 
 function pasoAnterior() {
-    let paso = document.getElementById("paso" - (pasoActual-1))
-    pasoActual.style.display = "none";
-    pasoAnterior = pasoActual - 1;
-    let pasoAnterior = document.getElementById("paso" - (pasoActual-1));
-    pasoAnterior.style.display = "block"
+    //Oculto el paso actual
+    let paso = document.getElementById("paso" + pasoActual)
+    paso.style.display = "none";
 
+    //Muestro el paso anterior
+    let pasoAnterior = document.getElementById("paso" + (pasoActual-1));
+    pasoAnterior.style.display ="block";
+
+    //Actualizo pasoActual para saber en donde quede
+    pasoActual = pasoActual - 1;
 }
 
 function donacionExitosa(){
