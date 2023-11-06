@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     />
     <script src="js/enviarOpinion.js"></script>
+    <script src="js/newsletter.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light  py-3 py-lg-1">
@@ -165,7 +166,7 @@
                   <input
                     type="text"
                     class="form-control border border-success rounded-pill"
-                    id="floatingInput"
+                    id="nombreYApellido"
                     placeholder="Nombre y apellido "
                   />
                   <label for="floatingInput">Nombre y apellido</label>
@@ -177,7 +178,7 @@
                       class="form-control border border-success rounded-pill"
                       style="color: #1a4301"
                       ;
-                      id="floatingInput"
+                      id="correoelectronico"
                       placeholder="Correo electrónico "
                     />
                     <label for="floatingInput">Correo electrónico</label>
@@ -191,6 +192,7 @@
                       color: #1a4301;
                     "
                     ;
+                    onclick="newsletter () "
                   >
                     ¡SUSCRIBIRME!
                   </button>
