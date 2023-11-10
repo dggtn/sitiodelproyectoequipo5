@@ -23,6 +23,19 @@ footer {
   }
 }
 
+@media(min-width:1442px){
+  .hide-on-1442px {
+    display: none !important;
+  }
+
+}
+@media(max-width:1441px){
+  .hide-on-1441px {
+    display: none !important;
+  }
+
+}
+
 @media (max-width: 1257px) {
     .hide-on-700px {
       display: none !important;
@@ -39,10 +52,6 @@ footer {
 
   img {
     width: 100%;
-  }
-
-  .hide-on-700px {
-    display: none !important;
   }
 .versiondesktop{
   background-image: url("./imagenes/fondoinicio.png");
