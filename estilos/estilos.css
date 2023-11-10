@@ -17,7 +17,11 @@ footer {
 	line-height: normal;
 }
 
-
+@media (min-width: 1258px){
+  .hide-on-701px {
+    display: none !important;
+  }
+}
 
 @media (max-width: 1257px) {
     .hide-on-700px {
@@ -36,8 +40,7 @@ footer {
   img {
     width: 100%;
   }
-}
-@media (max-width: 1257px) {
+
   .hide-on-700px {
     display: none !important;
   }
@@ -55,3 +58,4 @@ img {
   width: 100%;
 }
 }
+
