@@ -30,7 +30,11 @@ function enviarOpinion(){
         formularioValido = false;
     }
     if (formularioValido == true){
-        alert ("Tomaremos en cuenta tu opinión") 
+        alert ("Gracias " + nombre + " tomaremos en cuenta tu opinión ") 
+        document.getElementById("nombre").value = ""
+        document.getElementById("apellido").value=""
+        document.getElementById("comentarios").value=""
+        document.getElementById("email").value=""
         
     } else {
         alert ("Por favor complete todos los campos")

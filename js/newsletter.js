@@ -23,7 +23,9 @@ function newsletter(){
     }
     
     if (formularioValido == true){
-        alert ("Gracias por suscribirte a nuestro newsletter") 
+        alert ("Gracias " + nombreYApellido + " por suscribirte a nuestro newsletter") 
+        document.getElementById("nombreYApellido").value=""
+        document.getElementById("correoelectronico").value=""
         
     } else {
         alert ("Por favor complete todos los campos")

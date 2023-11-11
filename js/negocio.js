@@ -32,8 +32,11 @@ function negocio(){
         formularioValido = false;
     }
     if (formularioValido == true){
-        alert ("Gracias por registrar tu negocio") 
-        
+        alert ("Gracias " + nombredelnegocio + " por registrarte y ser parte de las empresas que conforman 'Share Before Waste'")  
+        document.getElementById("nombredelnegocio").value = ""
+        document.getElementById("numerodetelefono").value=""
+        document.getElementById("correoelectronico").value=""
+        document.getElementById("ciudad").value=""
     } else {
         alert ("Por favor complete todos los campos")
         console.log("Valido:", emailValido)
