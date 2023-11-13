@@ -97,10 +97,11 @@ function pasoAnterior() {
 }
 
 function donacionExitosa(){
-    alert("Tu donación se ha realizado con éxito ¡Gracias por ser parte de Share Before Waste!")
+    alert("Tu donación se ha realizado con éxito" +"nombre"+ "¡Gracias por ser parte de Share Before Waste!")
     let paso = document.getElementById("paso3")
     paso.style.display = "none";
     reiniciarFormulario();
+
 }
 
 function reiniciarFormulario(){
@@ -139,3 +140,12 @@ function cargarLocalidades(provinciaSeleccionada) {
     comboLocalidades.innerHTML = opciones
 }
 
+
+
+
+function validarEmail(correoElectronico){
+
+// Define our regular expression.
+var expresionRegular =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+return expresionRegular.test(email);
+}
