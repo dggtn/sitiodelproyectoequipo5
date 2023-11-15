@@ -152,7 +152,7 @@
                         class="form-label"
                       ></label>
                       <input
-                      
+                        onchange="agregarOtroMonto()"
                         type="number"
                         style="display:none;"
                         class="rounded form-control border border-dark me-5 text-dark fs-5 border border-dark"
@@ -213,6 +213,8 @@
                     </div>
                     <div class="col">
                       <button
+                        id="botonSiguienteUno"
+                        disabled
                         onclick="siguientePaso()"
                         type="button"
                         class="btn btn-primary mb-5 mt-5 fs-5 text-dark border border-dark fw-bold"
@@ -251,6 +253,7 @@
                         class="rounded form-control border border-dark me-5 text-dark fs-5"
                         id="nombre"
                         placeholder="Nombre"
+                        onchange="ingresarNombre(this.value)"
                       />
                     </div>
                     <div class="col">
@@ -264,6 +267,7 @@
                         class="rounded form-control border border-dark me-5 text-dark fs-5"
                         id="apellido"
                         placeholder="apellido"
+                        onchange="ingresarApellido(this.value)"
                       />
                     </div>
                   </div>
@@ -279,6 +283,7 @@
                         class="rounded form-control border border-dark me-5 text-dark fs-5"
                         id="fechaDeNacimiento"
                         placeholder="Fecha de nacimiento"
+                        onchange="ingresarFechaDeNacimiento(this.value)"
                       />
                     </div>
                     <div class="col">
@@ -292,6 +297,7 @@
                         class="rounded form-control border border-dark me-5 text-dark fs-5"
                         id="DNI"
                         placeholder="DNI"
+                        onchange="ingresarDni(this.value)"
                       />
                     </div>
                   </div>
@@ -307,6 +313,7 @@
                         class="rounded form-control border border-dark me-5 text-dark fs-5 mb-5"
                         id="correoElectronico"
                         placeholder=" Correo electrónico"
+                        onchange="ingresarEmail(this.value)"
                       />
                     </div>
                     <div class="col">
@@ -320,6 +327,7 @@
                         class="rounded form-control border border-dark me-5 text-dark fs-5 mb-5"
                         id="exampleFormControlInput1"
                         placeholder="Teléfono"
+                        onchange="ingresarTelefono(this.value)"
                       />
                     </div>
                   </div>
@@ -336,6 +344,8 @@
                     </div>
                     <div class="col">
                       <button
+                        disabled
+                        id="botonSiguienteDos"
                         onclick="siguientePaso()"
                         type="button"
                         class="btn btn-primary mb-5 mt-4 text-dark fs-5 fw-bold"

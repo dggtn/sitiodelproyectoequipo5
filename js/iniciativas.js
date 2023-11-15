@@ -1,22 +1,36 @@
-
 //Variables globales
 let pasoActual = 1;
 let pasosTotales = 3;
-let montoADonar = 0;
 let comboProvincias;
 let comboLocalidades;
 let comboComedores;
 
+//Variables pasoUno
+let montoADonar = 0;
+let provinciaSeleccionada = "noSeleccionado";
+let localidadSeleccionada = "noSeleccionado";
+let comedorSeleccionado = "noSeleccionado";
+
+//Variables pasoDos
+let nombreIngresado = ""
+let apellidoIngresado = ""
+let fechaDeNacimientoIngresada = ""
+let dniIngresado = ""
+let emailIngresado = ""
+let emailValido = false;
+let telefonoIngresado = ""
 
 //Javascript object Notation
 
 let provincias = {
+    noSeleccionado: [],
     buenosAires: [{value: "vl", nombre:"Vicente López"}, {value: "f", nombre:"Florida"}, {value: "vm", nombre:"Villa Martelli"}],
     mendoza: [{value: "ca", nombre:"Cañon del Atuel"},{value: "cc", nombre:"Chacras de Coria"} ,{value: "cz", nombre:"Colonia Suiza"}],
     cordoba: [{value: "af", nombre:"Alma Fuerte"},{value: "am", nombre:"Amboy"} ,{value: "clm", nombre:"Calmano"}],
 }
 
 let comedores = {
+    noSeleccionado: [],
     vl: [{value: "c1", nombre:"Comedor Comuna 1"},{value: "c11", nombre:"Comedor Comuna 11"}],
     f: [{value: "c2", nombre:"Comedor Comuna 2"},{value: "c12", nombre:"Comedor Comuna 12"}],
     vm: [{value: "c3", nombre:"Comedor Comuna 3"},{value: "c13", nombre:"Comedor Comuna 13"}],
@@ -32,6 +46,7 @@ window.onload=cargar;
 
 //Dentro de cada función hay variables locales, no las puedo usar en otra función
 function cargar() {
+    montoADonar=1000
     let boton1000 = document.getElementById("btnradio1")
     boton1000.onchange= seleccionar1000;
     let boton1500 = document.getElementById("btnradio2")
@@ -48,6 +63,9 @@ function cargar() {
     comboLocalidades.onchange = seleccionarlocalidad;
 
     comboComedores = document.getElementById("comedor")
+    comboComedores.onchange = seleccionarComedor;
+
+    puedeTerminarPasoUno();
 }
 
 function seleccionar1000(){
@@ -73,6 +91,27 @@ function seleccionarOtroMonto(){
     let botonOtroMonto = document.getElementById("otroMonto")
     botonOtroMonto.style.display= "block";
     botonOtroMonto.value=500;
+}
+
+function agregarOtroMonto() {
+    let botonOtroMonto = document.getElementById("otroMonto");
+    if (botonOtroMonto.value < 500) {
+        botonOtroMonto.value = 500;
+    }
+}
+
+function puedeTerminarPasoUno() {
+    //tuvo que elegir monto
+    let validacionOk = montoADonar > 0;
+    //tuvo que elegir provincia
+    validacionOk = validacionOk && provinciaSeleccionada != "noSeleccionado";
+    //tuvo que elegir localidad
+    validacionOk = validacionOk && localidadSeleccionada != "noSeleccionado";
+    //tuvo que elegir comedor
+    validacionOk = validacionOk && comedorSeleccionado != "noSeleccionado";
+
+    var boton = document.getElementById("botonSiguienteUno");
+    boton.disabled = !validacionOk;
 }
 
 function siguientePaso() {
@@ -111,41 +150,92 @@ function reiniciarFormulario(){
 }
 
 function seleccionarProvincia() {
-    let provinciaSeleccionada = comboProvincias.value;
+    provinciaSeleccionada = comboProvincias.value;
     cargarLocalidades(provinciaSeleccionada)
+    puedeTerminarPasoUno();
 }
 function seleccionarlocalidad(){
-    let localidadSeleccionada = comboLocalidades.value;
+    localidadSeleccionada = comboLocalidades.value;
     cargarComedores(localidadSeleccionada)
+    puedeTerminarPasoUno();
+}
+function seleccionarComedor() {
+    comedorSeleccionado = comboComedores.value;
+    puedeTerminarPasoUno();
 }
 function cargarComedores(localidadSeleccionada){
-    let opciones;
+    comedorSeleccionado = "noSeleccionado"
     let comedoresACargar = comedores[localidadSeleccionada];
+    let opciones=`<option value='noSeleccionado'>Seleccionar Comedor</option>`;
     comedoresACargar.forEach(comedor => {
         opciones += `<option value="${comedor.value}">${comedor.nombre}</option>` // "<option>" + localidad + "</option>"
     });
     comboComedores.innerHTML = opciones
 }
 function cargarLocalidades(provinciaSeleccionada) {
-    //ayuda para debugear
-    console.log(provincias)
+    localidadSeleccionada = "noSeleccionado"
     let localidades = provincias[provinciaSeleccionada]
-    //ayuda para debugear
-    console.log("Localidades:", localidades)
-    let opciones=`<option>Seleccionar Localidad</option>`;
+    let opciones=`<option value='noSeleccionado'>Seleccionar Localidad</option>`;
     localidades.forEach(localidad => {
         opciones += `<option value="${localidad.value}">${localidad.nombre}</option>` // "<option>" + localidad + "</option>"
     });
 
     comboLocalidades.innerHTML = opciones
+
+    cargarComedores("noSeleccionado")
 }
 
-
-
-
 function validarEmail(correoElectronico){
+    // Define our regular expression.
+    var expresionRegular =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+    return expresionRegular.test(correoElectronico);
+}
 
-// Define our regular expression.
-var expresionRegular =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-return expresionRegular.test(email);
+function ingresarNombre(nombre) {
+    nombreIngresado = nombre;
+    puedeTerminarPasoDos();
+}
+
+function ingresarApellido(apellido) {
+    apellidoIngresado = apellido;
+    puedeTerminarPasoDos()
+}
+
+function ingresarFechaDeNacimiento(fechaDeNacimiento) {
+    fechaDeNacimientoIngresada = fechaDeNacimiento;
+    puedeTerminarPasoDos();
+}
+
+function ingresarDni(dni) {
+    dniIngresado = dni
+    puedeTerminarPasoDos()
+}
+
+function ingresarEmail(email) {
+    emailIngresado = email;
+    emailValido = validarEmail(emailIngresado);
+    puedeTerminarPasoDos();
+}
+
+function ingresarTelefono(telefono) {
+    telefonoIngresado = telefono
+    puedeTerminarPasoDos()
+}
+
+function puedeTerminarPasoDos() {
+    //tuvo que elegir nombre
+    let validacionOk = nombreIngresado != "";
+    //tuvo que elegir apellido
+    validacionOk = validacionOk && apellidoIngresado != ""
+    //tuvo que elegir fecha nacimiento
+    validacionOk = validacionOk && fechaDeNacimientoIngresada != "";
+    //tuvo que elegir dni
+    validacionOk = validacionOk && dniIngresado != "";
+    //tuvo que elegir correo electronico
+    validacionOk = validacionOk && emailValido;
+    //tuvo que elegir telefono
+    validacionOk = validacionOk && telefonoIngresado != "";
+
+    var boton = document.getElementById("botonSiguienteDos");
+    boton.disabled = !validacionOk;
 }
