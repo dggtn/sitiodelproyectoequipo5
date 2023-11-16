@@ -30,6 +30,12 @@ let fechaDeVencimiento = ""
 
 //Javascript object Notation
 
+let nombresDeProvincias = {
+    buenosAires: "Buenos Aires",
+    mendoza: "Mendoza",
+    cordoba: "Córdoba"
+}
+
 let provincias = {
     noSeleccionado: [],
     buenosAires: [{value: "vl", nombre:"Vicente López"}, {value: "f", nombre:"Florida"}, {value: "vm", nombre:"Villa Martelli"}],
@@ -143,13 +149,7 @@ function pasoAnterior() {
     pasoActual = pasoActual - 1;
 }
 
-function donacionExitosa(){
-    alert("Tu donación se ha realizado con éxito" +"nombre"+ "¡Gracias por ser parte de Share Before Waste!")
-    let paso = document.getElementById("paso3")
-    paso.style.display = "none";
-    reiniciarFormulario();
 
-}
 
 function reiniciarFormulario(){
     pasoActual=1;
@@ -290,4 +290,27 @@ function puedeTerminarPasoTres() {
     boton.disabled = !validacionOk;
 }
 
+
+function donacionExitosa(){
+    var mensaje = `Tu donación se ha realizado con éxito ${nombreIngresado}. ¡Gracias por ser parte de Share Before Waste!
+    Acá te mostramos los detalles de tu donación:
+    Importe: $ ${montoADonar}
+    Provincia: ${nombresDeProvincias[provinciaSeleccionada]}
+    Localidad: ${obtenerNombreLocalidadSeleccionada()}
+    Nombre del comedor: ${comedorSeleccionado }
+
+    ¡Gracias por tu donación!
+    `
+    alert(mensaje)
+    let paso = document.getElementById("paso3")
+    paso.style.display = "none";
+    reiniciarFormulario();
+
+}
+
+function obtenerNombreLocalidadSeleccionada() {
+    let localidades = provincias[provinciaSeleccionada]
+    let localidad = localidades.find((unaLocalidad) => unaLocalidad.value == localidadSeleccionada);
+    return localidad.nombre;
+}
 
