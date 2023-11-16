@@ -20,6 +20,14 @@ let emailIngresado = ""
 let emailValido = false;
 let telefonoIngresado = ""
 
+//Variables pasoTres
+let numeroDeTarjeta = ""
+let nombresDelTitular = ""
+let apellidosDelTitular = ""
+let dni = ""
+let fechaDeVencimiento = ""
+
+
 //Javascript object Notation
 
 let provincias = {
@@ -240,31 +248,46 @@ function puedeTerminarPasoDos() {
     boton.disabled = !validacionOk;
 }
 
+function ingresarNumeroDeTarjeta(numeroTarjeta) {
+    numeroDeTarjeta = numeroTarjeta;
+    puedeTerminarPasoTres();
+}
+
+function ingresarNombresDelTitular(nombres) {
+    nombresDelTitular = nombres;
+    puedeTerminarPasoTres();
+}
+
+function ingresarApellidosDelTitular(apellidos) {
+    apellidosDelTitular = apellidos;
+    puedeTerminarPasoTres();
+}
 
 
+function ingresardniDelTitular(dniIngresado) {
+    dni = dniIngresado
+    puedeTerminarPasoTres()
+}
 
-
-
-
-
-
-
-puedeTerminarPasoTres();
+function ingresarFechaDeVencimiento(fechaVencimiento) {
+    fechaDeVencimiento = fechaVencimiento;
+    puedeTerminarPasoTres();
+}
 
 function puedeTerminarPasoTres() {
-    //tuvo que elegir nombre
-    let validacionOk = nombreIngresado != "";
-    //tuvo que elegir apellido
-    validacionOk = validacionOk && apellidoIngresado != ""
-    //tuvo que elegir fecha nacimiento
-    validacionOk = validacionOk && fechaDeNacimientoIngresada != "";
+    //tuvo que elegir numeroTarjeta
+    let validacionOk = numeroDeTarjeta != "";
+    //tuvo que elegir nombres
+    validacionOk = validacionOk && nombresDelTitular != ""
+    //tuvo que elegir apellidos
+    validacionOk = validacionOk && apellidosDelTitular != "";
     //tuvo que elegir dni
-    validacionOk = validacionOk && dniIngresado != "";
-    //tuvo que elegir correo electronico
-    validacionOk = validacionOk && emailValido;
-    //tuvo que elegir telefono
-    validacionOk = validacionOk && telefonoIngresado != "";
+    validacionOk = validacionOk && dni != "";
+    //tuvo que elegir fechadevencimiento
+    validacionOk = validacionOk && fechaDeVencimiento != "";
 
-    var boton = document.getElementById("botonSiguienteDos");
+    var boton = document.getElementById("botonSiguienteTres");
     boton.disabled = !validacionOk;
 }
+
+
