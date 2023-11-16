@@ -292,12 +292,12 @@ function puedeTerminarPasoTres() {
 
 
 function donacionExitosa(){
-    var mensaje = `Tu donación se ha realizado con éxito ${nombreIngresado}. ¡Gracias por ser parte de Share Before Waste!
+    var mensaje = `Tu donación se ha realizado con éxito ${nombreIngresado} ${apellidoIngresado}. ¡Gracias por ser parte de Share Before Waste!
     Acá te mostramos los detalles de tu donación:
     Importe: $ ${montoADonar}
     Provincia: ${nombresDeProvincias[provinciaSeleccionada]}
     Localidad: ${obtenerNombreLocalidadSeleccionada()}
-    Nombre del comedor: ${comedorSeleccionado }
+    Nombre del comedor: ${obtenerNombreComedorSeleccionado() }
 
     ¡Gracias por tu donación!
     `
@@ -314,3 +314,8 @@ function obtenerNombreLocalidadSeleccionada() {
     return localidad.nombre;
 }
 
+function obtenerNombreComedorSeleccionado() {
+    let comedoresparadonar = comedores[localidadSeleccionada]
+    let comedor = comedoresparadonar.find((unComedor) => unComedor.value == comedorSeleccionado);
+    return comedor.nombre;
+}
