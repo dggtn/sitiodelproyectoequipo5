@@ -239,3 +239,32 @@ function puedeTerminarPasoDos() {
     var boton = document.getElementById("botonSiguienteDos");
     boton.disabled = !validacionOk;
 }
+
+
+
+
+
+
+
+
+
+
+puedeTerminarPasoTres();
+
+function puedeTerminarPasoTres() {
+    //tuvo que elegir nombre
+    let validacionOk = nombreIngresado != "";
+    //tuvo que elegir apellido
+    validacionOk = validacionOk && apellidoIngresado != ""
+    //tuvo que elegir fecha nacimiento
+    validacionOk = validacionOk && fechaDeNacimientoIngresada != "";
+    //tuvo que elegir dni
+    validacionOk = validacionOk && dniIngresado != "";
+    //tuvo que elegir correo electronico
+    validacionOk = validacionOk && emailValido;
+    //tuvo que elegir telefono
+    validacionOk = validacionOk && telefonoIngresado != "";
+
+    var boton = document.getElementById("botonSiguienteDos");
+    boton.disabled = !validacionOk;
+}
