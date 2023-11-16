@@ -43,6 +43,7 @@ display: flex;
 		transform: translateX(0);
 	}
 
+
 @media (min-width: 1024px)  { 
   .fondo-inicio-desktop {
       display: block!important;
@@ -51,6 +52,22 @@ display: flex;
   display: none!important;
 }
 }
+@media (min-width: 1439px)  { 
+  .fondo-inicio-desktop1 {
+      display: block!important;
+    }
+.fondo-inicio-mobile1{
+  display: none!important;
+}
+}
+@media (max-width: 1438px)  {
+  .fondo-inicio-desktop1 {
+    display: none!important;
+  }
+  .fondo-inicio-mobile1{
+  
+    display: block!important;
+  }}
 @media (max-width: 1023px)  {
   .fondo-inicio-desktop {
     display: none!important;
