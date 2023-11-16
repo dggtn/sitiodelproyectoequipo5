@@ -249,101 +249,58 @@
         </div>
       </div>
       <div class="container text-center my-3">
-        <div class="row mx-auto my-auto justify-content-center">
-          <div
-            id="recipeCarousel"
-            class="container carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="col-md-3">
-                  <img
-                    src="imagenes/empresa1.png"
-                    class="img-fluid"
-                    alt="empresa"
-                  />
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="col-md-3">
-                  <img
-                    src="imagenes/empresa2.png"
-                    class="img-fluid"
-                    alt="empresa"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <img
-                      src="imagenes/empresa3.png"
-                      class="img-fluid"
-                      alt="empresa"
-                    />
-                  </div>
-                  <div class="card-img-overlay"></div>
-                </div>
+        <div class="row carusel mx-auto my-auto justify-content-center">
+          <div class="col-md primera-imagen">
+            <div>
+              <div class="card-img">
+                <img src="imagenes/empresa6.png" class="img-fluid" />
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="col-md-3">
-                <div class="card-img">
-                  <img
-                    src="imagenes/empresa4.png"
-                    class="img-fluid"
-                    alt="empresa"
-                  />
-                </div>
+          </div>
+          <div class="col-md">
+            <div>
+              <div class="card-img hide-mobile">
+                <img src="imagenes/empresa5.png" class="img-fluid" />
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="col-md-3">
-                <img
-                  src="imagenes/empresa5.png"
-                  class="img-fluid"
-                  alt="empresa"
-                />
+          </div>
+          <div class="col-md">
+            <div>
+              <div class="card-img hide-mobile">
+                <img src="imagenes/empresa4.png" class="img-fluid" />
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="col-md-3">
-                <img
-                  src="imagenes/empresa6.png"
-                  class="img-fluid"
-                  alt="empresa"
-                />
+          </div>
+          <div class="col-md">
+            <div>
+              <div class="card-img hide-mobile">
+                <img src="imagenes/empresa3.png" class="img-fluid" />
               </div>
-              <div class="carousel-item">
-                <div class="col-md-3">
-                  <img
-                    src="imagenes/empresa7.png"
-                    class="img-fluid"
-                    alt="empresa"
-                    class="img-fluid"
-                  />
-                </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div>
+              <div class="card-img hide-mobile">
+                <img src="imagenes/empresa2.png" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div>
+              <div class="card-img hide-mobile">
+                <img src="imagenes/empresa1.png" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div>
+              <div class="card-img hide-mobile">
+                <img src="imagenes/empresa7.png" class="img-fluid" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <script>
-        let items = document.querySelectorAll(".carousel .carousel-item ");
-        console.log(items.length);
-        items.forEach((el) => {
-          const minPerSlide = 5;
-          let next = el.nextElementSibling;
-          for (var i = 1; i < minPerSlide; i++) {
-            if (!next) {
-              // wrap carousel by using first child
-              next = items[0];
-            }
-            let cloneChild = next.cloneNode(true);
-            el.appendChild(cloneChild.children[0]);
-            next = next.nextElementSibling;
-          }
-        });
-      </script>
     </main>
     <footer class="container-fluid mt-5 mb-1">
       <div class="row">
